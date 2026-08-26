@@ -250,3 +250,47 @@ footer {
     padding: 20px;
     background: #0f6fae;
 }
+
+/* -------------------------
+   Upcoming Live
+   ------------------------- */
+
+.live-list {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+.live-item {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.12);
+    text-align: left;
+}
+
+.live-date {
+    color: #0f6fae;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.live-item h3 {
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+.ticket-button {
+    display: inline-block;
+    padding: 15px 32px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+.ticket-button:hover {
+    opacity: 0.8;
+}
