@@ -425,7 +425,7 @@ footer {
 .more-live-button {
     display: block;
     width: fit-content;
-    margin: 20px auto 30px;
+    margin: 20px auto 15px;
     padding: 5px 0;
     color: #0f6fae;
     text-decoration: none;
@@ -434,4 +434,20 @@ footer {
 
 .more-live-button:hover {
     text-decoration: underline;
+}
+
+.ticket-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 32px;
+    background: #0f6fae;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+.ticket-button:hover {
+    background: #0b5d91;
 }
