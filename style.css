@@ -243,8 +243,9 @@ footer {
 .hero-image {
     display: block;
     width: 100%;
-    height: auto;
-    max-height: none;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .hero nav {
