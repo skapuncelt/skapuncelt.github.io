@@ -425,16 +425,13 @@ footer {
 .more-live-button {
     display: block;
     width: fit-content;
-    margin: 25px auto;
-    padding: 10px 22px;
-    border: 2px solid #0f6fae;
-    border-radius: 999px;
+    margin: 20px auto 30px;
+    padding: 5px 0;
     color: #0f6fae;
     text-decoration: none;
     font-weight: bold;
 }
 
 .more-live-button:hover {
-    background: #0f6fae;
-    color: white;
+    text-decoration: underline;
 }
