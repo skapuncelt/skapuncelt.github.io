@@ -294,3 +294,129 @@ footer {
 .ticket-button:hover {
     opacity: 0.8;
 }
+
+
+/* =========================
+   LIVE PAGE
+   ========================= */
+
+.page-header {
+    background: linear-gradient(135deg, #0f6fae, #4db6d8);
+    padding: 20px;
+}
+
+.back-home {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.live-page {
+    background: linear-gradient(to bottom, #f4fcff, #ffffff);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.live-heading {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.live-heading h1 {
+    margin: 5px 0 15px;
+    font-size: 2.8rem;
+    color: #0f6fae;
+}
+
+.section-subtitle {
+    margin: 0;
+    color: #4db6d8;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.live-heading > p:last-child {
+    margin: 0;
+}
+
+.live-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.live-section h2 {
+    text-align: center;
+    color: #0f6fae;
+    margin-bottom: 25px;
+}
+
+.live-list {
+    display: grid;
+    gap: 20px;
+}
+
+.live-item {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.12);
+}
+
+.live-item .live-date {
+    margin: 0 0 5px;
+    color: #0f6fae;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.live-item h3 {
+    margin: 5px 0 10px;
+    font-size: 1.4rem;
+}
+
+.live-place {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.detail-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: 2px solid #0f6fae;
+    border-radius: 999px;
+    color: #0f6fae;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.detail-button:hover {
+    background: #0f6fae;
+    color: white;
+}
+
+.past-live {
+    margin-top: 70px;
+}
+
+.past-live-list {
+    display: grid;
+    gap: 15px;
+}
+
+.past-live-item {
+    background: #f0f8fb;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+.past-live-item h3 {
+    margin: 5px 0;
+}
+
+.live-back {
+    text-align: center;
+    margin-top: 60px;
+}
