@@ -218,7 +218,8 @@ footer {
 
 .hero {
     position: relative;
-    min-height: 65vh;
+   height: 60vh;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -256,7 +257,7 @@ footer {
 }
 
 .logo {
-    width: min(280px, 55vw);
+    width: min(250px, 50vw);
     height: auto;
     display: block;
     margin: 0 auto 15px;
