@@ -472,3 +472,89 @@ footer {
 }
 
 
+
+
+/* -------------------------
+   Live Detail
+   ------------------------- */
+
+.live-detail-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.12);
+    overflow: hidden;
+}
+
+.live-detail-header {
+    padding: 35px 30px;
+    text-align: center;
+    background: #eaf8ff;
+}
+
+.live-detail-header h2 {
+    margin: 5px 0 8px;
+    color: #12344a;
+}
+
+.live-detail-header .live-date {
+    margin: 0;
+}
+
+.live-detail-header .live-place {
+    margin: 0;
+    font-weight: bold;
+}
+
+.live-detail-info {
+    padding: 10px 30px 30px;
+}
+
+.live-detail-block {
+    padding: 25px 0;
+    border-bottom: 1px solid #dceef5;
+    text-align: center;
+}
+
+.live-detail-block:last-child {
+    border-bottom: none;
+}
+
+.live-detail-block h3 {
+    margin-bottom: 10px;
+    color: #0f6fae;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+}
+
+.live-detail-block p {
+    margin: 4px 0;
+}
+
+.live-detail-block.highlight {
+    background: #f4fbff;
+    margin: 10px -15px;
+    padding: 25px 15px;
+    border-radius: 15px;
+    border-bottom: none;
+}
+
+.performance-time {
+    color: #0f6fae;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.artist-list {
+    line-height: 1.7;
+}
+
+.artist-list p:last-child {
+    color: #0f6fae;
+    font-weight: bold;
+}
+
+.live-detail-block .ticket-button {
+    margin-top: 15px;
+}
