@@ -281,19 +281,6 @@ footer {
     font-size: 1.3rem;
 }
 
-.ticket-button {
-    display: inline-block;
-    padding: 15px 32px;
-    background: #e63946;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 999px;
-}
-
-.ticket-button:hover {
-    opacity: 0.8;
-}
 
 
 /* =========================
