@@ -1,1 +1,213 @@
+/* =========================
+   SkaPunCelt - style.css
+   ========================= */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background: linear-gradient(to bottom, #eaf8ff, #ffffff);
+    color: #12344a;
+    line-height: 1.8;
+}
+
+/* -------------------------
+   Header
+   ------------------------- */
+
+header {
+    background: linear-gradient(135deg, #0f6fae, #4db6d8);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+}
+
+nav a:hover {
+    background: white;
+    color: #0f6fae;
+}
+
+/* -------------------------
+   Main
+   ------------------------- */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0f6fae;
+    margin-bottom: 30px;
+    letter-spacing: 0.08em;
+}
+
+/* -------------------------
+   Live
+   ------------------------- */
+
+#live {
+    background: linear-gradient(to bottom, #ffffff, #dff5ff);
+}
+
+#live p {
+    margin-bottom: 8px;
+}
+
+#live a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+#live a:hover {
+    opacity: 0.8;
+}
+
+/* -------------------------
+   Music
+   ------------------------- */
+
+#music a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    border: 2px solid #0f6fae;
+    border-radius: 999px;
+    color: #0f6fae;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#music a:hover {
+    background: #0f6fae;
+    color: white;
+}
+
+/* -------------------------
+   Profile
+   ------------------------- */
+
+#profile {
+    background: #f4fbff;
+}
+
+#profile p {
+    max-width: 700px;
+    margin: 0 auto 18px;
+}
+
+/* -------------------------
+   Members
+   ------------------------- */
+
+#members {
+    background: white;
+}
+
+#members article {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    padding: 25px;
+    border-radius: 18px;
+    background: #eaf8ff;
+}
+
+#members h3 {
+    color: #0f6fae;
+    margin-bottom: 8px;
+}
+
+/* -------------------------
+   Footer
+   ------------------------- */
+
+footer {
+    background: #12344a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* -------------------------
+   Smartphone
+   ------------------------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 45px 15px 30px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 7px 11px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
