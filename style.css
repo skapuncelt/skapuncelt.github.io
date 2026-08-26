@@ -558,3 +558,22 @@ footer {
 .live-detail-block .ticket-button {
     margin-top: 15px;
 }
+
+
+/* -------------------------
+   Live Flyer
+   ------------------------- */
+
+.live-flyer {
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.live-flyer img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
