@@ -451,3 +451,14 @@ footer {
 .ticket-button:hover {
     background: #0b5d91;
 }
+
+
+.back-home-button {
+    color: #0f6fae;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-home-button:hover {
+    text-decoration: underline;
+}
