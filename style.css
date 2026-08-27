@@ -1282,3 +1282,65 @@ footer {
 }
 
 
+
+/* =========================
+   MEMBER SNS
+   ========================= */
+
+.member-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.member-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 6px 13px;
+
+    border: 1px solid #0f6fae;
+    border-radius: 999px;
+
+    color: #0f6fae;
+    background: white;
+
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.member-social-links a:hover {
+    background: #0f6fae;
+    color: white;
+}
+
+.sns-icon {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+
+/* Xだけ少しシンプルに */
+
+.x-link .sns-icon {
+    font-size: 0.95rem;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 600px) {
+
+    .member-social-links a {
+        padding: 6px 11px;
+        font-size: 0.75rem;
+    }
+
+}
+
