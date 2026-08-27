@@ -1070,8 +1070,8 @@ footer {
 }
 
 .home-member-photo {
-    width: 140px;
-    height: 140px;
+    width: 80px;
+    height: 80px;
 
     margin: 0 auto 18px;
 
@@ -1115,8 +1115,8 @@ footer {
     }
 
     .home-member-photo {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 
     #members article h3 {
