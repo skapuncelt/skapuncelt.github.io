@@ -673,3 +673,249 @@ footer {
     }
 
 }
+
+
+
+
+
+
+```css
+/* =========================
+   MEMBER DETAIL PAGE
+   ========================= */
+
+.member-page {
+    background: linear-gradient(to bottom, #f4fcff, #ffffff);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+
+/* -------------------------
+   Member Heading
+   ------------------------- */
+
+.member-heading {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.member-heading h1 {
+    margin: 5px 0 10px;
+    font-size: 2.8rem;
+    color: #0f6fae;
+}
+
+.member-heading .member-part {
+    margin: 0;
+    color: #4db6d8;
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   Sections
+   ------------------------- */
+
+.member-detail-section {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    padding: 0 20px;
+}
+
+.member-detail-section > h2 {
+    text-align: center;
+    color: #0f6fae;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    color: #5f7f90;
+}
+
+
+/* -------------------------
+   Official Profile
+   ------------------------- */
+
+.member-profile-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.12);
+}
+
+.member-detail-photo {
+    flex-shrink: 0;
+}
+
+.member-detail-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member-profile-info {
+    flex: 1;
+}
+
+.profile-item {
+    margin-bottom: 20px;
+}
+
+.profile-item:last-child {
+    margin-bottom: 0;
+}
+
+.profile-item h3 {
+    color: #4db6d8;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.profile-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   About
+   ------------------------- */
+
+.about-list {
+    display: grid;
+    gap: 15px;
+}
+
+.about-item {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 80, 120, 0.08);
+    text-align: left;
+}
+
+.about-item h3 {
+    color: #0f6fae;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.about-item p {
+    margin: 0;
+}
+
+
+/* -------------------------
+   Member's Voice
+   ------------------------- */
+
+.member-voice-section {
+    background: #f0f8fb;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-radius: 20px;
+}
+
+.voice-list {
+    display: grid;
+    gap: 15px;
+}
+
+.voice-item {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.voice-item h3 {
+    color: #0f6fae;
+    margin-bottom: 5px;
+}
+
+.voice-item p {
+    margin: 0;
+}
+
+
+/* -------------------------
+   Personal History
+   ------------------------- */
+
+.member-history-section {
+    text-align: center;
+}
+
+.history-preview {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.10);
+}
+
+.history-preview p {
+    margin-bottom: 20px;
+}
+
+
+/* -------------------------
+   Back
+   ------------------------- */
+
+.member-back {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* -------------------------
+   Smartphone
+   ------------------------- */
+
+@media (max-width: 600px) {
+
+    .member-heading {
+        padding: 60px 15px 40px;
+    }
+
+    .member-heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .member-detail-section {
+        padding: 0 15px;
+        margin-bottom: 55px;
+    }
+
+    .member-profile-card {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .member-detail-photo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .member-profile-info {
+        width: 100%;
+    }
+
+    .about-item {
+        padding: 18px 20px;
+    }
+
+}
+```
+
