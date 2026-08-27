@@ -577,3 +577,99 @@ footer {
     margin: 0 auto;
     border-radius: 12px;
 }
+
+
+
+
+/* -------------------------
+   Members
+   ------------------------- */
+
+.members-page {
+    background: linear-gradient(to bottom, #f4fcff, #ffffff);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.members-heading {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.members-heading h1 {
+    margin: 5px 0 15px;
+    font-size: 2.8rem;
+    color: #0f6fae;
+}
+
+.members-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.12);
+}
+
+.member-photo {
+    flex-shrink: 0;
+}
+
+.member-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member-info {
+    text-align: left;
+}
+
+.member-part {
+    color: #4db6d8;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.member-info h2 {
+    margin: 0 0 10px;
+}
+
+.member-info p {
+    margin-bottom: 15px;
+}
+
+.members-back {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+@media (max-width: 600px) {
+
+    .member-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member-info {
+        text-align: center;
+    }
+
+    .member-photo img {
+        width: 160px;
+        height: 160px;
+    }
+
+}
