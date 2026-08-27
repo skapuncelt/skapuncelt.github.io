@@ -1128,3 +1128,157 @@ footer {
 
 
 
+/* =========================
+   HOME SOCIAL
+   ========================= */
+
+#social {
+    background: #f4fbff;
+    text-align: center;
+}
+
+#social > h2 {
+    margin-bottom: 35px;
+}
+
+
+/* -------------------------
+   Official SNS
+   ------------------------- */
+
+.official-social {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    padding: 30px 20px;
+
+    background: white;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.10);
+}
+
+.official-social h3 {
+    margin-bottom: 3px;
+    color: #0f6fae;
+    font-size: 1.5rem;
+}
+
+.social-label {
+    margin-bottom: 20px;
+    color: #4db6d8;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   Social Links
+   ------------------------- */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+
+    padding: 9px 20px;
+
+    border: 2px solid #0f6fae;
+    border-radius: 999px;
+
+    color: #0f6fae;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    transition: 0.2s;
+}
+
+.social-links a:hover {
+    background: #0f6fae;
+    color: white;
+}
+
+
+/* -------------------------
+   Harry Duck
+   ------------------------- */
+
+.character-social {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 18px;
+}
+
+.character-social h3 {
+    margin-bottom: 3px;
+    color: #0f6fae;
+}
+
+
+/* -------------------------
+   Member SNS
+   ------------------------- */
+
+.member-social {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.member-social > h3 {
+    margin-bottom: 25px;
+    color: #0f6fae;
+    font-size: 1.3rem;
+}
+
+.member-social-item {
+    padding: 20px 0;
+    border-top: 1px solid rgba(15, 111, 174, 0.15);
+}
+
+.member-social-item:last-child {
+    border-bottom: 1px solid rgba(15, 111, 174, 0.15);
+}
+
+.member-social-item h4 {
+    margin-bottom: 12px;
+    color: #12344a;
+    font-size: 1.1rem;
+}
+
+
+/* -------------------------
+   Smartphone
+   ------------------------- */
+
+@media (max-width: 600px) {
+
+    #social {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .official-social {
+        padding: 25px 15px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-links a {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+}
+
+
