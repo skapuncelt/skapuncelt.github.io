@@ -1052,5 +1052,79 @@ footer {
 
 
 
+/* =========================
+   HOME MEMBERS
+   ========================= */
+
+#members article {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 25px 20px 30px;
+
+    background: white;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.10);
+
+    text-align: center;
+}
+
+.home-member-photo {
+    width: 140px;
+    height: 140px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: #eaf8ff;
+}
+
+.home-member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#members article h3 {
+    margin-bottom: 4px;
+
+    color: #0f6fae;
+    font-size: 1.5rem;
+}
+
+.home-member-part {
+    margin-bottom: 18px;
+
+    color: #4db6d8;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 600px) {
+
+    #members article {
+        max-width: 100%;
+        padding: 22px 15px 28px;
+    }
+
+    .home-member-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #members article h3 {
+        font-size: 1.35rem;
+    }
+
+}
+
+
 
 
