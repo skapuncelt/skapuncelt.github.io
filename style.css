@@ -1371,44 +1371,85 @@ footer {
 ========================= */
 
 .side-story {
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
+/* SIDE STORYボタン */
 .side-story summary {
     cursor: pointer;
-    display: inline-block;
-    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 7px 14px;
+
+    border: 1px solid #333;
+    border-radius: 20px;
+
+    font-size: 0.75rem;
     font-weight: bold;
-    letter-spacing: 0.08em;
-    color: #555;
+    letter-spacing: 0.12em;
+
+    color: #333;
+    background: #fff;
+
     list-style: none;
+
+    transition: all 0.2s ease;
 }
 
 .side-story summary::-webkit-details-marker {
     display: none;
 }
 
+/* ＋ / − */
 .side-story summary::before {
-    content: "＋ ";
+    content: "＋";
+    font-size: 0.9rem;
 }
 
 .side-story[open] summary::before {
-    content: "− ";
+    content: "−";
 }
 
+/* マウスを乗せたとき */
+.side-story summary:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* 開いたときの内容 */
 .side-story-content {
     margin-top: 14px;
-    padding: 18px;
+    padding: 20px;
+
     background: #f7f7f7;
-    border-left: 3px solid #333;
+
+    border-radius: 8px;
+
     font-size: 0.9rem;
-    line-height: 1.8;
+    line-height: 1.9;
+
+    animation: sideStoryOpen 0.25s ease;
 }
 
 .side-story-content p {
-    margin: 0 0 12px;
+    margin: 0 0 14px;
 }
 
 .side-story-content p:last-child {
     margin-bottom: 0;
+}
+
+/* 開いたときのアニメーション */
+@keyframes sideStoryOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
