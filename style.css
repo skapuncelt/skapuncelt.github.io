@@ -1359,3 +1359,56 @@ footer {
     display: block;
 }
 
+
+
+
+
+
+
+
+/* =========================
+   SIDE STORY
+========================= */
+
+.side-story {
+    margin-top: 16px;
+}
+
+.side-story summary {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: #555;
+    list-style: none;
+}
+
+.side-story summary::-webkit-details-marker {
+    display: none;
+}
+
+.side-story summary::before {
+    content: "＋ ";
+}
+
+.side-story[open] summary::before {
+    content: "− ";
+}
+
+.side-story-content {
+    margin-top: 14px;
+    padding: 18px;
+    background: #f7f7f7;
+    border-left: 3px solid #333;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.side-story-content p {
+    margin: 0 0 12px;
+}
+
+.side-story-content p:last-child {
+    margin-bottom: 0;
+}
