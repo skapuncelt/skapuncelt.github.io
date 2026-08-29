@@ -1432,3 +1432,7 @@ footer {
 .side-story-content p:last-child {
     margin-bottom: 0;
 }
+
+.side-story-content {
+    text-align: left;
+}
