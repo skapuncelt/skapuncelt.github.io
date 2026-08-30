@@ -1821,3 +1821,128 @@ transform: scale(0.94);
     }
 
 }
+
+
+
+/* =========================
+   SECRET GOODS
+========================= */
+
+.secret-goods-page {
+    background: linear-gradient(to bottom, #f4fcff, #ffffff);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.secret-goods-heading {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.secret-goods-heading h1 {
+    margin: 5px 0 15px;
+    font-size: 2.5rem;
+    color: #0f6fae;
+}
+
+.secret-goods-heading p {
+    margin-bottom: 8px;
+}
+
+.secret-goods-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.secret-goods-list {
+    display: grid;
+    gap: 20px;
+}
+
+.secret-goods-item {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.10);
+    text-align: center;
+}
+
+.secret-goods-item h2 {
+    margin-bottom: 3px;
+    color: #0f6fae;
+    font-size: 1.4rem;
+}
+
+.secret-goods-price {
+    margin-bottom: 20px;
+    color: #4db6d8;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.secret-goods-description {
+    margin-bottom: 8px;
+}
+
+.secret-goods-item > p:not(.secret-goods-price):not(.secret-goods-description) {
+    margin-bottom: 20px;
+}
+
+.secret-goods-content {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4fbff;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.secret-goods-content p {
+    margin: 3px 0;
+}
+
+.secret-goods-info {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 25px 20px;
+    text-align: center;
+    color: #5f7f90;
+    font-size: 0.9rem;
+}
+
+.secret-goods-info p {
+    margin-bottom: 8px;
+}
+
+
+/* -------------------------
+   Smartphone
+------------------------- */
+
+@media (max-width: 600px) {
+
+    .secret-goods-heading {
+        padding: 60px 15px 40px;
+    }
+
+    .secret-goods-heading h1 {
+        font-size: 2rem;
+    }
+
+    .secret-goods-section {
+        padding: 0 15px;
+    }
+
+    .secret-goods-item {
+        padding: 25px 20px;
+    }
+
+    .secret-goods-item h2 {
+        font-size: 1.25rem;
+    }
+
+    .secret-goods-description {
+        font-size: 0.95rem;
+    }
+
+}
