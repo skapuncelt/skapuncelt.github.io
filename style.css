@@ -1678,3 +1678,38 @@ Smartphone
 
 
 
+/* -------------------------
+Harry Duck Hidden Element
+------------------------- */
+
+.harryduck-trigger {
+display: block;
+width: fit-content;
+margin: 0 auto 15px;
+text-decoration: none;
+}
+
+.harryduck-trigger img {
+display: block;
+width: 150px;
+height: auto;
+margin: 0 auto;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.harryduck-trigger:hover img {
+transform: scale(1.05);
+}
+
+.harryduck-message {
+display: none;
+margin-top: 18px;
+color: #0f6fae;
+font-weight: bold;
+font-size: 0.95rem;
+}
+
+.harryduck-message.show {
+display: block;
+}
