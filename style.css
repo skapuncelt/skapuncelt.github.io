@@ -1774,10 +1774,27 @@ transition: all 0.2s ease;
 background: #d7f1fb;
 }
 
-.harryduck-sticker-trigger:active {
-display: inline-block;
-transform: scale(0.94);
+.harryduck-sticker-trigger {
+    color: #0f6fae;
+    font-weight: bold;
+    text-decoration: none;
+    background: #eaf8ff;
+    padding: 3px 7px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
+
+.harryduck-sticker-trigger:hover {
+    background: #d7f1fb;
+}
+
+.harryduck-sticker-trigger:active {
+    background: #c9ebf7;
+}
+
+
 
 .hidden-goods-message {
 display: none;
