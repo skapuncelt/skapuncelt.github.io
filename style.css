@@ -1946,3 +1946,119 @@ transform: scale(0.94);
     }
 
 }
+
+
+
+
+
+
+
+/* =========================
+   SECRET GOODS
+========================= */
+
+.secret-goods-page {
+    background: linear-gradient(to bottom, #f4fcff, #ffffff);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.secret-goods-heading {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.secret-goods-heading h1 {
+    margin: 5px 0 15px;
+    font-size: 2.5rem;
+    color: #0f6fae;
+}
+
+.secret-goods-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.secret-goods-item {
+    background: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 80, 120, 0.10);
+    text-align: center;
+}
+
+.secret-goods-image {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+}
+
+.secret-goods-item h2 {
+    margin-bottom: 5px;
+    color: #0f6fae;
+    font-size: 1.5rem;
+}
+
+.secret-goods-price {
+    color: #0f6fae;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.secret-goods-catch {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.secret-goods-content {
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #dceef5;
+    color: #5f7f90;
+    font-size: 0.9rem;
+}
+
+.secret-goods-note {
+    text-align: center;
+    margin-top: 10px;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.secret-goods-back {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 600px) {
+
+    .secret-goods-heading {
+        padding: 60px 15px 40px;
+    }
+
+    .secret-goods-heading h1 {
+        font-size: 2rem;
+    }
+
+    .secret-goods-section {
+        padding: 0 15px;
+    }
+
+    .secret-goods-item {
+        padding: 20px 15px;
+    }
+
+    .secret-goods-image {
+        max-width: 300px;
+    }
+
+}
