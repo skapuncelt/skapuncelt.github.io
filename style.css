@@ -1436,3 +1436,245 @@ footer {
 .side-story-content {
     text-align: left;
 }
+
+
+/* =========================
+GOODS PAGE
+========================= */
+
+.goods-page {
+background: linear-gradient(to bottom, #f4fcff, #ffffff);
+min-height: 100vh;
+padding-bottom: 60px;
+}
+
+/* -------------------------
+Goods Heading
+------------------------- */
+
+.goods-heading {
+text-align: center;
+padding: 70px 20px 45px;
+}
+
+.goods-heading h1 {
+margin: 5px 0 15px;
+font-size: 2.5rem;
+color: #0f6fae;
+}
+
+.goods-heading > p:last-child {
+margin: 0;
+color: #5f7f90;
+}
+
+/* -------------------------
+Goods Section
+------------------------- */
+
+.goods-section {
+max-width: 900px;
+margin: 0 auto 70px;
+padding: 0 20px;
+}
+
+.goods-section h2 {
+text-align: center;
+color: #0f6fae;
+margin-bottom: 10px;
+}
+
+.goods-section .section-description {
+margin-top: 0;
+margin-bottom: 30px;
+}
+
+/* -------------------------
+Goods List
+------------------------- */
+
+.goods-list {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+}
+
+/* -------------------------
+Goods Item
+------------------------- */
+
+.goods-item {
+background: white;
+border-radius: 18px;
+padding: 20px;
+box-shadow: 0 4px 15px rgba(0, 80, 120, 0.10);
+}
+
+/* -------------------------
+Goods Photo
+------------------------- */
+
+.goods-photo {
+width: 100%;
+max-width: 260px;
+margin: 0 auto 20px;
+aspect-ratio: 1 / 1;
+overflow: hidden;
+border-radius: 12px;
+background: #f0f8fb;
+}
+
+.goods-photo img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+display: block;
+}
+
+/* -------------------------
+Goods Info
+------------------------- */
+
+.goods-info {
+text-align: left;
+}
+
+.goods-info h3 {
+margin-bottom: 5px;
+color: #0f6fae;
+font-size: 1.2rem;
+line-height: 1.5;
+}
+
+.goods-price {
+margin-bottom: 8px;
+color: #12344a;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.goods-type {
+display: inline-block;
+margin-bottom: 10px;
+padding: 3px 9px;
+border-radius: 999px;
+background: #eaf8ff;
+color: #0f6fae;
+font-size: 0.78rem;
+font-weight: bold;
+}
+
+.goods-description {
+color: #456878;
+font-size: 0.9rem;
+line-height: 1.8;
+}
+
+/* -------------------------
+Future Goods
+------------------------- */
+
+.future-goods-item {
+max-width: 600px;
+margin: 0 auto;
+padding: 30px;
+background: #f7fbfd;
+border: 1px solid #dceef5;
+border-radius: 18px;
+text-align: center;
+}
+
+.future-goods-item h3 {
+margin-bottom: 10px;
+color: #0f6fae;
+font-size: 1.3rem;
+}
+
+.future-goods-item p {
+margin: 0;
+}
+
+.future-goods-item .future-note {
+margin-top: 12px;
+color: #7a929e;
+font-size: 0.8rem;
+}
+
+/* -------------------------
+Live Venue Only
+------------------------- */
+
+.goods-live-section {
+text-align: center;
+padding-top: 45px;
+padding-bottom: 45px;
+background: #f0f8fb;
+border-radius: 20px;
+}
+
+.goods-live-section .section-description {
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* -------------------------
+Back
+------------------------- */
+
+.goods-back {
+text-align: center;
+margin-top: 20px;
+}
+
+/* -------------------------
+Smartphone
+------------------------- */
+
+@media (max-width: 600px) {
+
+
+.goods-heading {
+    padding: 60px 15px 40px;
+}
+
+.goods-heading h1 {
+    font-size: 2rem;
+}
+
+.goods-section {
+    padding: 0 15px;
+    margin-bottom: 55px;
+}
+
+.goods-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.goods-item {
+    padding: 18px;
+}
+
+.goods-photo {
+    max-width: 240px;
+}
+
+.goods-info h3 {
+    font-size: 1.1rem;
+}
+
+.goods-description {
+    font-size: 0.88rem;
+}
+
+.future-goods-item {
+    padding: 25px 20px;
+}
+
+
+}
+
+
+
+
