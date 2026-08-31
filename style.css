@@ -2095,37 +2095,3 @@ transform: scale(0.94);
 
 
 
-/* -------------------------
-   Secret Quiz
-   ------------------------- */
-
-.secret-link {
-    display: inline-block;
-    padding: 5px 3px;
-    color: #0f6fae;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 4px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.secret-link:hover {
-    text-decoration: underline;
-}
-
-.secret-quiz-message {
-    display: none;
-    margin: 25px auto 0;
-    text-align: center;
-}
-
-.secret-quiz-message.show {
-    display: block;
-}
-
-.secret-quiz-message p {
-    margin-bottom: 18px;
-    color: #0f6fae;
-    font-weight: bold;
-}
