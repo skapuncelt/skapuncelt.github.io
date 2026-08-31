@@ -2085,3 +2085,43 @@ transform: scale(0.94);
     line-height: 1.8;
     margin-bottom: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+/* -------------------------
+   Secret Quiz
+   ------------------------- */
+
+.secret-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secret-link:hover {
+    text-decoration: underline;
+}
+
+.secret-quiz-message {
+    display: none;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.secret-quiz-message.show {
+    display: block;
+}
+
+.secret-quiz-message p {
+    margin-bottom: 18px;
+    color: #0f6fae;
+    font-weight: bold;
+}
