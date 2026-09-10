@@ -762,6 +762,15 @@ footer {
     border-radius: 50%;
 }
 
+.member-detail-photo img.hiroto-photo {
+    object-position: 48% 48%;
+}
+
+.member-detail-photo img.shinya-photo {
+    object-position: 47% 50%;
+}
+
+
 .member-profile-info {
     flex: 1;
 }
