@@ -2377,3 +2377,14 @@ transform: scale(0.94);
 
 }
 
+/* =========================
+   HOME MEMBER PHOTO POSITION
+========================= */
+
+.home-member-photo img.hiroto-photo {
+    object-position: 48% 47%;
+}
+
+.home-member-photo img.shinya-photo {
+    object-position: 47% 50%;
+}
