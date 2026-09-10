@@ -95,3 +95,29 @@
 .quiz-choice:disabled {
     cursor: default;
 }
+
+
+
+
+
+
+.quiz-result {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.quiz-result-label {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+}
+
+.quiz-result h2 {
+    margin: 0 0 30px;
+    font-size: clamp(3rem, 10vw, 5rem);
+    line-height: 1;
+}
+
+.quiz-result p:last-child {
+    line-height: 1.9;
+}
