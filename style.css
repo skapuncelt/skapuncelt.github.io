@@ -2285,38 +2285,43 @@ transform: scale(0.94);
 
 
 /* =========================
-   CONSTRUCTION - HARRY DUCK
+   BOTTOM AREA
 ========================= */
 
-/* =========================
-   CONSTRUCTION - COMING SOON
-========================= */
-
-.comingsoon-content {
+.bottom-area {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 80px;
+    margin-top: 100px;
 }
 
-.comingsoon-content > p {
-    margin: 0;
-    line-height: 1.9;
+
+/* BACK TO HOME */
+
+.back-home {
+    margin-top: 0;
+    text-align: center;
+}
+
+.back-home a {
+    text-decoration: none;
+    letter-spacing: 0.08em;
 }
 
 
 /* =========================
-   CONSTRUCTION - HARRY DUCK
+   HARRY DUCK
 ========================= */
 
 .construction-harryduck {
-    flex-shrink: 0;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .construction-harryduck img {
     display: block;
-    width: 160px;
+    width: 130px;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
@@ -2329,7 +2334,7 @@ transform: scale(0.94);
 }
 
 .construction-harryduck-message {
-    margin: 20px 0 0;
+    margin: 15px 0 0;
     opacity: 0;
     transform: translateY(-5px);
     transition: opacity 0.25s ease, transform 0.25s ease;
@@ -2349,13 +2354,12 @@ transform: scale(0.94);
 
 @media (max-width: 600px) {
 
-    .comingsoon-content {
-        flex-direction: column;
-        gap: 30px;
+    .bottom-area {
+        gap: 35px;
     }
 
     .construction-harryduck img {
-        width: 130px;
+        width: 100px;
     }
 
     .construction-harryduck-message {
