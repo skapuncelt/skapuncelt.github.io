@@ -86,6 +86,21 @@
       
     </section>
 
+
+<!-- Harry Duck --> 
+    <section class="construction-harryduck">
+        <a href="#" class="harryduck-trigger" 
+            onclick="showConstructionHarryDuckMessage(); return false;">
+            <img src="harryduck.jpg" alt="ハリーダックちゃん">
+        </a> 
+        
+        <p id="construction-harryduck-message" 
+            class="construction-harryduck-message"> 
+            まだまだ増えるで～　......グァ！ 
+        </p> 
+    </section>
+
+    
     
 
     <section class="back-home">
@@ -99,5 +114,13 @@
     <p>© SkaPunCelt</p>
 </footer>
 
+
+<script> function showConstructionHarryDuckMessage() { 
+    const message = document.getElementById("construction-harryduck-message"); 
+    message.classList.toggle("show");
+}
+</script>
+
+    
 </body>
 </html>
