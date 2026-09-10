@@ -2381,10 +2381,18 @@ transform: scale(0.94);
    HOME MEMBER PHOTO POSITION
 ========================= */
 
-.home-member-photo img.hiroto-photo {
-    object-position: 30% 30%;
+.home-member-photo img.hiroto-photo,
+.member-detail-photo img.hiroto-photo {
+    object-position:  30% 30%;
 }
 
-.home-member-photo img.shinya-photo {
-    object-position: 70% 45%;
+.home-member-photo img.shinya-photo,
+.member-detail-photo img.shinya-photo {
+    object-position: 70% 40%;
 }
+
+
+
+
+
+
