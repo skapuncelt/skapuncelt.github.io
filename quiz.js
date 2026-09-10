@@ -294,6 +294,14 @@ const quizElement = document.getElementById("quiz");
 function showQuestion() {
     const question = selectedQuestions[currentQuestion];
 
+    // 選択肢をランダムに並び替える
+    const shuffledChoices = question.choices
+        .map((choice, index) => ({
+            choice: choice,
+            originalIndex: index
+        }))
+        .sort(() => Math.random() - 0.5);
+
     quizElement.innerHTML = `
         <div class="quiz-question">
 
@@ -304,14 +312,14 @@ function showQuestion() {
             <h2>${question.question}</h2>
 
             <div class="quiz-choices">
-                ${question.choices.map((choice, index) => `
-                    <button
-                        class="quiz-choice"
-                        onclick="answerQuestion(${index})"
-                    >
-                        ${choice}
-                    </button>
-                `).join("")}
+            ${shuffledChoices.map((item, index) => `
+            <button
+            class="quiz-choice"
+            onclick="answerQuestion(${item.originalIndex})"
+    >
+        ${item.choice}
+    </button>
+`).join("")}
             </div>
 
         </div>
