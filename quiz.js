@@ -291,6 +291,9 @@ const quizElement = document.getElementById("quiz");
 function showQuestion() {
     const question = selectedQuestions[currentQuestion];
 
+function showQuestion() {
+    const question = selectedQuestions[currentQuestion];
+
     quizElement.innerHTML = `
         <div class="quiz-question">
 
@@ -302,7 +305,10 @@ function showQuestion() {
 
             <div class="quiz-choices">
                 ${question.choices.map((choice, index) => `
-                    <button class="quiz-choice">
+                    <button
+                        class="quiz-choice"
+                        onclick="answerQuestion(${index})"
+                    >
                         ${choice}
                     </button>
                 `).join("")}
@@ -312,5 +318,40 @@ function showQuestion() {
     `;
 }
 
+
+
+
+
+function answerQuestion(selectedAnswer) {
+    const question = selectedQuestions[currentQuestion];
+    const buttons = document.querySelectorAll(".quiz-choice");
+
+    // 全ての選択肢を押せないようにする
+    buttons.forEach(button => {
+        button.disabled = true;
+    });
+
+    // 正解なら緑、不正解なら赤
+    if (selectedAnswer === question.answer) {
+        buttons[selectedAnswer].classList.add("correct");
+    } else {
+        buttons[selectedAnswer].classList.add("incorrect");
+        buttons[question.answer].classList.add("correct");
+    }
+
+    // 少し待って次の問題へ
+    setTimeout(() => {
+        currentQuestion++;
+
+        if (currentQuestion < selectedQuestions.length) {
+            showQuestion();
+        }
+    }, 1000);
+}
+
+
+
+
+    
 // 最初の問題を表示
 showQuestion();
