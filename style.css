@@ -2278,3 +2278,45 @@ transform: scale(0.94);
     letter-spacing: 0.08em;
 }
 
+
+
+
+
+
+
+/* =========================
+   CONSTRUCTION - HARRY DUCK
+========================= */
+
+.construction-harryduck {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.construction-harryduck img {
+    display: block;
+    width: 160px;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.construction-harryduck img:hover {
+    transform: translateY(-4px);
+}
+
+.construction-harryduck-message {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    line-height: 1.8;
+}
+
+.construction-harryduck-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
