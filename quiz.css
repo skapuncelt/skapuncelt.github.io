@@ -1,0 +1,33 @@
+.quiz-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px 100px;
+}
+
+.quiz-hero {
+    text-align: center;
+    padding: 40px 0 70px;
+}
+
+.quiz-hero .section-label {
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+}
+
+.quiz-hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
+.quiz-hero p:last-child {
+    margin-top: 30px;
+    line-height: 1.9;
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
