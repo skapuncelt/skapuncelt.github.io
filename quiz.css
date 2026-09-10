@@ -31,3 +31,44 @@
     max-width: 700px;
     margin: 0 auto;
 }
+
+
+
+
+
+
+.quiz-question {
+    text-align: center;
+}
+
+.quiz-progress {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+}
+
+.quiz-question h2 {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.quiz-choices {
+    display: grid;
+    gap: 14px;
+}
+
+.quiz-choice {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quiz-choice:hover {
+    opacity: 0.65;
+}
