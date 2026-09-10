@@ -16,21 +16,31 @@
     <a href="index.html">← SkaPunCelt</a>
 </header>
 
+
 <main class="construction-page">
 
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="construction-hero">
+
         <p class="section-label">NEW CONTENTS</p>
 
         <h1>新コンテンツ<br>建設予定地</h1>
 
-        <p class="construction-lead">あれ？迷い込んでもうたんかいな。<br>
-        せっかく来てもろたのに、まだ何もないわ。<br>
-        ごめんやで、もうちょっと待っててな。
+        <p class="construction-lead">
+            あれ？迷い込んでもうたんかいな。<br>
+            せっかく来てもろたのに、まだ何もないわ。<br>
+            ごめんやで、もうちょっと待っててな。
         </p>
+
     </section>
 
 
-
+    <!-- =========================
+         SNS
+    ========================== -->
 
     <section class="construction-section sns-section">
 
@@ -63,20 +73,27 @@
                 Instagram
             </a>
 
-
         </div>
 
-                <!-- Harry Duck -->
-        <div class="construction-harryduck">
+    </section>
 
-            <a href="#" class="harryduck-trigger"
-                onclick="showConstructionHarryDuckMessage(); return false;">
-                <img src="harryduck.jpg" alt="ハリーダックちゃん">
-            </a>
 
-            <p id="construction-harryduck-message"
-                class="construction-harryduck-message">
-                まだまだ増えるで～　......グァ！
+    <!-- =========================
+         COMING SOON
+    ========================== -->
+
+    <section class="construction-section">
+
+        <h2>COMING SOON</h2>
+
+        <div class="comingsoon-content">
+
+            <p>
+                SkaPunCeltの新しいコンテンツを<br>
+                現在制作中です。<br>
+                <br>
+                SkaPunCeltの活動とともに、<br>
+                このサイトも少しずつ進化していきます。
             </p>
 
         </div>
@@ -84,50 +101,64 @@
     </section>
 
 
+    <!-- =========================
+         BOTTOM
+    ========================== -->
+
+    <div class="bottom-area">
+
+        <!-- BACK TO HOME -->
+        <section class="back-home">
+            <a href="index.html">← BACK TO HOME</a>
+        </section>
 
 
-<section class="construction-section">
+        <!-- Harry Duck -->
+        <section class="construction-harryduck">
 
-    <h2>COMING SOON</h2>
+            <a
+                href="#"
+                class="harryduck-trigger"
+                onclick="showConstructionHarryDuckMessage(); return false;"
+            >
+                <img src="harryduck.jpg" alt="ハリーダックちゃん">
+            </a>
 
-    <div class="comingsoon-content">
+            <p
+                id="construction-harryduck-message"
+                class="construction-harryduck-message"
+            >
+                まだまだ増えるで～　......グァ！
+            </p>
 
-        <p>
-            SkaPunCeltの新しいコンテンツを<br>
-            現在制作中です。<br>
-            <br>
-            SkaPunCeltの活動とともに、<br>
-            このサイトも少しずつ進化していきます。
-        </p>
-
-
+        </section>
 
     </div>
 
-</section>
-
-
-    
-    
-
-    <section class="back-home">
-        <a href="index.html">← BACK TO HOME</a>
-    </section>
-
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
     <p>© SkaPunCelt</p>
 </footer>
 
 
-<script> function showConstructionHarryDuckMessage() { 
-    const message = document.getElementById("construction-harryduck-message"); 
+<!-- =========================
+     HARRY DUCK SCRIPT
+========================= -->
+
+<script>
+function showConstructionHarryDuckMessage() {
+    const message = document.getElementById("construction-harryduck-message");
     message.classList.toggle("show");
 }
 </script>
 
-    
+
 </body>
 </html>
+
