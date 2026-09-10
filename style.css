@@ -2148,3 +2148,133 @@ transform: scale(0.94);
 .flyer-link:hover {
     opacity: 0.85;
 }
+
+
+
+
+/* =========================
+   CONSTRUCTION PAGE
+========================= */
+
+.construction-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px 100px;
+}
+
+.construction-hero {
+    text-align: center;
+    padding: 40px 0 90px;
+}
+
+.construction-hero .section-label {
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+}
+
+.construction-hero h1 {
+    margin: 0;
+    font-size: clamp(3rem, 10vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+}
+
+.construction-lead {
+    margin-top: 32px;
+    line-height: 1.9;
+}
+
+
+.construction-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.construction-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+}
+
+.construction-section > p {
+    line-height: 1.9;
+}
+
+
+.construction-list {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.construction-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.construction-item:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.construction-item > span {
+    min-width: 35px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+.construction-item h3 {
+    margin: 0 0 6px;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+.construction-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+.sns-section {
+    margin-top: 100px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.sns-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.sns-button {
+    display: inline-block;
+    min-width: 130px;
+    padding: 13px 20px;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sns-button:hover {
+    opacity: 0.65;
+}
+
+
+.back-home {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.back-home a {
+    text-decoration: none;
+    letter-spacing: 0.08em;
+}
+
