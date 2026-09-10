@@ -291,9 +291,6 @@ const quizElement = document.getElementById("quiz");
 function showQuestion() {
     const question = selectedQuestions[currentQuestion];
 
-function showQuestion() {
-    const question = selectedQuestions[currentQuestion];
-
     quizElement.innerHTML = `
         <div class="quiz-question">
 
