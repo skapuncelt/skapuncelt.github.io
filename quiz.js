@@ -333,7 +333,6 @@ function answerQuestion(selectedAnswer) {
         buttons[selectedAnswer].classList.add("correct");
     } else {
         buttons[selectedAnswer].classList.add("incorrect");
-        buttons[question.answer].classList.add("correct");
     }
 
     // 少し待って次の問題へ
