@@ -2113,3 +2113,38 @@ transform: scale(0.94);
     font-weight: bold;
 }
 
+
+
+
+
+
+
+
+
+/* =========================
+   LIVE - PAST LIVE
+========================= */
+
+.live-acts {
+    margin-top: 12px;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.live-flyer {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 24px auto 0;
+    border-radius: 8px;
+}
+
+.flyer-link {
+    display: block;
+    text-decoration: none;
+}
+
+.flyer-link:hover {
+    opacity: 0.85;
+}
