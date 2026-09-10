@@ -284,6 +284,9 @@ const selectedQuestions = [...quizQuestions]
 // 現在の問題番号
 let currentQuestion = 0;
 
+// 正解数
+let score = 0;
+
 // クイズを表示する場所
 const quizElement = document.getElementById("quiz");
 
@@ -329,22 +332,45 @@ function answerQuestion(selectedAnswer) {
     });
 
     // 正解なら緑、不正解なら赤
-    if (selectedAnswer === question.answer) {
-        buttons[selectedAnswer].classList.add("correct");
-    } else {
-        buttons[selectedAnswer].classList.add("incorrect");
-    }
-
-    // 少し待って次の問題へ
-    setTimeout(() => {
-        currentQuestion++;
-
-        if (currentQuestion < selectedQuestions.length) {
-            showQuestion();
-        }
-    }, 1000);
+if (selectedAnswer === question.answer) {
+    buttons[selectedAnswer].classList.add("correct");
+    score++;
+} else {
+    buttons[selectedAnswer].classList.add("incorrect");
 }
 
+    // 少し待って次の問題へ
+setTimeout(() => {
+    currentQuestion++;
+
+    if (currentQuestion < selectedQuestions.length) {
+        showQuestion();
+    } else {
+        showResult();
+    }
+}, 1000);
+}
+
+
+// 結果を表示する
+function showResult() {
+    quizElement.innerHTML = `
+        <div class="quiz-result">
+
+            <p class="quiz-result-label">
+                QUEST CLEAR
+            </p>
+
+            <h2>${score} / 10</h2>
+
+            <p>
+                お疲れさまでした！<br>
+                SkaPunCeltクイズ終了です。
+            </p>
+
+        </div>
+    `;
+}
 
 
 
