@@ -274,3 +274,43 @@ const quizQuestions = [
         answer: 0
     }
 ];
+
+
+// 25問からランダムに10問を選ぶ
+const selectedQuestions = [...quizQuestions]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 10);
+
+// 現在の問題番号
+let currentQuestion = 0;
+
+// クイズを表示する場所
+const quizElement = document.getElementById("quiz");
+
+// 問題を表示する
+function showQuestion() {
+    const question = selectedQuestions[currentQuestion];
+
+    quizElement.innerHTML = `
+        <div class="quiz-question">
+
+            <p class="quiz-progress">
+                QUEST ${String(currentQuestion + 1).padStart(2, "0")} / 10
+            </p>
+
+            <h2>${question.question}</h2>
+
+            <div class="quiz-choices">
+                ${question.choices.map((choice, index) => `
+                    <button class="quiz-choice">
+                        ${choice}
+                    </button>
+                `).join("")}
+            </div>
+
+        </div>
+    `;
+}
+
+// 最初の問題を表示
+showQuestion();
