@@ -1,3 +1,4 @@
+
 const quizQuestions = [
     {
         question: "SkaPunCeltの読み方は？",
@@ -281,14 +282,18 @@ const selectedQuestions = [...quizQuestions]
     .sort(() => Math.random() - 0.5)
     .slice(0, 10);
 
+
 // 現在の問題番号
 let currentQuestion = 0;
+
 
 // 正解数
 let score = 0;
 
+
 // クイズを表示する場所
 const quizElement = document.getElementById("quiz");
+
 
 // 問題を表示する
 function showQuestion() {
@@ -296,9 +301,9 @@ function showQuestion() {
 
     // 選択肢をランダムに並び替える
     const shuffledChoices = question.choices
-        .map((choice, index) => ({
+        .map((choice, originalIndex) => ({
             choice: choice,
-            originalIndex: index
+            originalIndex: originalIndex
         }))
         .sort(() => Math.random() - 0.5);
 
@@ -312,14 +317,16 @@ function showQuestion() {
             <h2>${question.question}</h2>
 
             <div class="quiz-choices">
-            ${shuffledChoices.map((item, index) => `
-            <button
-            class="quiz-choice"
-            onclick="answerQuestion(${item.originalIndex})"
-    >
-        ${item.choice}
-    </button>
-`).join("")}
+
+                ${shuffledChoices.map((item, displayIndex) => `
+                    <button
+                        class="quiz-choice"
+                        onclick="answerQuestion(${displayIndex}, ${item.originalIndex})"
+                    >
+                        ${item.choice}
+                    </button>
+                `).join("")}
+
             </div>
 
         </div>
@@ -327,10 +334,8 @@ function showQuestion() {
 }
 
 
-
-
-
-function answerQuestion(selectedAnswer) {
+// 答えを判定する
+function answerQuestion(displayIndex, originalIndex) {
     const question = selectedQuestions[currentQuestion];
     const buttons = document.querySelectorAll(".quiz-choice");
 
@@ -339,24 +344,24 @@ function answerQuestion(selectedAnswer) {
         button.disabled = true;
     });
 
-    // 正解なら緑、不正解なら赤
-if (selectedAnswer === question.answer) {
-    buttons[selectedAnswer].classList.add("correct");
-    score++;
-} else {
-    buttons[selectedAnswer].classList.add("incorrect");
-}
+    // 正解なら緑、不正解なら選んだ答えだけ赤
+    if (originalIndex === question.answer) {
+        buttons[displayIndex].classList.add("correct");
+        score++;
+    } else {
+        buttons[displayIndex].classList.add("incorrect");
+    }
 
     // 少し待って次の問題へ
-setTimeout(() => {
-    currentQuestion++;
+    setTimeout(() => {
+        currentQuestion++;
 
-    if (currentQuestion < selectedQuestions.length) {
-        showQuestion();
-    } else {
-        showResult();
-    }
-}, 1000);
+        if (currentQuestion < selectedQuestions.length) {
+            showQuestion();
+        } else {
+            showResult();
+        }
+    }, 1000);
 }
 
 
@@ -381,7 +386,6 @@ function showResult() {
 }
 
 
-
-    
 // 最初の問題を表示
 showQuestion();
+
