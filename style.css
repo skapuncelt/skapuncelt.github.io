@@ -2383,12 +2383,12 @@ transform: scale(0.94);
 
 .home-member-photo img.hiroto-photo,
 .member-detail-photo img.hiroto-photo {
-    object-position:  25% 25%;
+    object-position: 15% 15%;
 }
 
 .home-member-photo img.shinya-photo,
 .member-detail-photo img.shinya-photo {
-    object-position: 70% 35%;
+    object-position: 75% 35%;
 }
 
 
