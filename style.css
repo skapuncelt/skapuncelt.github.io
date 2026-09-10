@@ -2288,15 +2288,36 @@ transform: scale(0.94);
    CONSTRUCTION - HARRY DUCK
 ========================= */
 
+/* =========================
+   CONSTRUCTION - COMING SOON
+========================= */
+
+.comingsoon-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.comingsoon-content > p {
+    margin: 0;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   CONSTRUCTION - HARRY DUCK
+========================= */
+
 .construction-harryduck {
-    margin-top: 100px;
+    flex-shrink: 0;
     text-align: center;
 }
 
 .construction-harryduck img {
     display: block;
     width: 160px;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     cursor: pointer;
@@ -2308,15 +2329,38 @@ transform: scale(0.94);
 }
 
 .construction-harryduck-message {
-    margin-top: 20px;
+    margin: 20px 0 0;
     opacity: 0;
     transform: translateY(-5px);
     transition: opacity 0.25s ease, transform 0.25s ease;
     line-height: 1.8;
+    white-space: nowrap;
 }
 
 .construction-harryduck-message.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .comingsoon-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .construction-harryduck img {
+        width: 130px;
+    }
+
+    .construction-harryduck-message {
+        white-space: normal;
+    }
+
 }
 
