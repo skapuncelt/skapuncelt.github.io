@@ -416,21 +416,35 @@ function showPerfectResult() {
         </div>
     `;
 
-    // 4秒後に「しかし」を表示
+setTimeout(() => {
+
+    quizElement.innerHTML = `
+        <div class="quiz-result quiz-perfect">
+
+            <p class="quiz-perfect-text">
+                ……しかし。
+            </p>
+
+        </div>
+    `;
+
     setTimeout(() => {
 
         quizElement.innerHTML = `
             <div class="quiz-result quiz-perfect">
 
                 <p class="quiz-perfect-text">
-                    ……しかし。
+                    ここまでSkaPunCeltのことを<br>
+                    知り尽くしている人物が<br>
+                    果たして普通の人間なのでしょうか。
                 </p>
 
             </div>
         `;
 
-    }, 4000);
-}
+    }, 1500);
+
+}, 2000);
 
 
 // 最初の問題を表示
