@@ -439,8 +439,36 @@ setTimeout(() => {
                     果たして普通の人間なのでしょうか。
                 </p>
 
+            </div>setTimeout(() => {
+
+    quizElement.innerHTML = `
+        <div class="quiz-result quiz-perfect">
+
+            <p class="quiz-perfect-text">
+                ここまでSkaPunCeltのことを<br>
+                知り尽くしている人物が<br>
+                果たして普通の人間なのでしょうか。
+            </p>
+
+        </div>
+    `;
+
+    setTimeout(() => {
+
+        quizElement.innerHTML = `
+            <div class="quiz-result quiz-perfect">
+
+                <p class="quiz-perfect-text">
+                    現在、メンバーで協議中です。
+                </p>
+
             </div>
         `;
+
+    }, 2500);
+
+}, 1500);
+        `
 
     }, 1500);
 
