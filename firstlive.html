@@ -947,5 +947,26 @@
     <p>© SkaPunCelt</p>
 </footer>
 
+
+
+
+    <script>
+    const questionButtons = document.querySelectorAll(".firstlive-question-button");
+
+    questionButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const question = button.closest(".firstlive-question");
+            const icon = button.querySelector(".firstlive-question-icon");
+
+            question.classList.toggle("is-open");
+
+            if (question.classList.contains("is-open")) {
+                icon.textContent = "−";
+            } else {
+                icon.textContent = "＋";
+            }
+        });
+    });
+</script>
 </body>
 </html>
