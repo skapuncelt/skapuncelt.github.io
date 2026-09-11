@@ -416,8 +416,18 @@ function showPerfectResult() {
         </div>
     `;
 
+    // 4秒後に「しかし」を表示
+    setTimeout(() => {
+
+        quizElement.innerHTML = `
+            <div class="quiz-result quiz-perfect">
+
+                <p class="quiz-perfect-text">
+                    ……しかし。
+                </p>
+
+            </div>
+        `;
+
+    }, 4000);
 }
-
-// 最初の問題を表示
-showQuestion();
-
