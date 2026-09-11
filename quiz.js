@@ -384,8 +384,9 @@ function showResult() {
             <h2>${score} / 10</h2>
 
             <p>
-                お疲れさまでした！<br>
-                SkaPunCeltクイズ終了です。
+                お疲れ様でした！<br>
+                全問正解できるように<br>
+                このホームページをもっと探検してみてね
             </p>
 
         </div>
