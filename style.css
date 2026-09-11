@@ -2393,6 +2393,13 @@ transform: scale(0.94);
 
 
 
+.firstlive-link {
+    margin-top: 50px;
+    text-align: center;
+}
 
+.firstlive-link-text {
+    margin-bottom: 15px;
+}
 
 
