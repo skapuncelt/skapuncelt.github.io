@@ -532,23 +532,37 @@ setTimeout(() => {
 
 
         // 称号発表
-        setTimeout(() => {
+setTimeout(() => {
 
-            quizElement.innerHTML = `
-                <div class="quiz-result quiz-perfect">
+    quizElement.innerHTML = `
+        <div class="quiz-result quiz-perfect">
 
-                    <p class="quiz-perfect-text">
-                        称号：暇人<br>
-                        <br>
-                        おめでとうございます。<br>
-                        ※この称号があるからといって、<br>
-                        何かあるわけではないです。
-                    </p>
+            <p class="quiz-perfect-text">
+                称号：暇人<br>
+                <br>
+                おめでとうございます。<br>
+                ※この称号があるからといって、<br>
+                何かあるわけではないです。
+                <br><br>
+                ……でも、
+                <br><br>
+                ここまでSkaPunCeltのことを<br>
+                知っているあなたなら、<br>
+                <strong>ライブに来たら、もっと楽しいんちゃう？</strong>
+                <br><br>
+                実際に曲を聴いて、<br>
+                一緒に歌って、踊って、<br>
+                もっとSkaPunCeltを楽しもう！
+                <br><br>
+                <a href="live.html" class="quiz-live-link">
+                    → LIVE
+                </a>
+            </p>
 
-                </div>
-            `;
+        </div>
+    `;
 
-        }, 2000);
+}, 2000);
 
     }, 2000);
 
