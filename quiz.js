@@ -450,20 +450,81 @@ function showPerfectResult() {
             `;
 
 
-            // 第四段階
+// 第四段階
+setTimeout(() => {
+
+    quizElement.innerHTML = `
+        <div class="quiz-result quiz-perfect">
+
+            <p class="quiz-perfect-text">
+                現在、メンバーで協議中です。
+            </p>
+
+        </div>
+    `;
+
+
+    // メンバー協議
+    setTimeout(() => {
+
+        quizElement.innerHTML = `
+            <div class="quiz-result quiz-perfect">
+
+                <p class="quiz-perfect-text">
+                    のすけ「これは……」
+                </p>
+
+            </div>
+        `;
+
+
+        setTimeout(() => {
+
+            quizElement.innerHTML = `
+                <div class="quiz-result quiz-perfect">
+
+                    <p class="quiz-perfect-text">
+                        ひろと「うーん……」
+                    </p>
+
+                </div>
+            `;
+
+
             setTimeout(() => {
 
                 quizElement.innerHTML = `
                     <div class="quiz-result quiz-perfect">
 
                         <p class="quiz-perfect-text">
-                            現在、メンバーで協議中です。
+                            セーラ「……。」
                         </p>
 
                     </div>
                 `;
 
-            }, 3500);
+
+                setTimeout(() => {
+
+                    quizElement.innerHTML = `
+                        <div class="quiz-result quiz-perfect">
+
+                            <p class="quiz-perfect-text">
+                                しんや「やっぱこれちゃう？」
+                            </p>
+
+                        </div>
+                    `;
+
+                }, 1800);
+
+            }, 1800);
+
+        }, 1800);
+
+    }, 1800);
+
+}, 3500);
 
         }, 2500);
 
