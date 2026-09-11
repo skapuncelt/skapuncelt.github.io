@@ -19,19 +19,49 @@
 <main class="quiz-page">
 
     <section class="quiz-hero">
-        <p class="section-label">SkaPunCelt QUIZ</p>
+
+        <p class="section-label">SECRET ROUTE</p>
 
         <h1>SkaPunCelt<br>QUIZ</h1>
 
-        <p>
-            SkaPunCeltに関する<br>
-            10問のクイズに挑戦しよう。
+        <p class="quiz-secret-intro">
+            ここまで辿り着いてしまったあなたへ。<br>
+            <br>
+            そろそろSkaPunCeltについて<br>
+            だいぶ色々わかってきたんじゃないですか？<br>
+            
+            <br>
+            そこで……<br>
+            <br>
+            あなたのSkaPunCelt知識を<br>
+            試してみませんか？
         </p>
+
     </section>
+
 
     <section class="quiz-container">
 
-        <div id="quiz"></div>
+        <!-- クイズ開始前 -->
+        <div id="quiz-start">
+
+            <p class="quiz-start-text">
+                SkaPunCeltに関する<br>
+                10問のクイズに挑戦できます。
+            </p>
+
+            <button
+                class="quiz-start-button"
+                onclick="startQuiz()"
+            >
+                クイズに挑戦する
+            </button>
+
+        </div>
+
+
+        <!-- クイズ本体 -->
+        <div id="quiz" style="display: none;"></div>
 
     </section>
 
