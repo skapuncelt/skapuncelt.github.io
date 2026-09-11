@@ -367,6 +367,14 @@ function answerQuestion(displayIndex, originalIndex) {
 
 // 結果を表示する
 function showResult() {
+
+    // 10問すべて正解した場合
+    if (score === 10) {
+        showPerfectResult();
+        return;
+    }
+
+    // 10問すべて正解ではない場合
     quizElement.innerHTML = `
         <div class="quiz-result">
 
@@ -385,6 +393,30 @@ function showResult() {
     `;
 }
 
+
+// 10 / 10専用演出
+function showPerfectResult() {
+
+    quizElement.innerHTML = `
+        <div class="quiz-result quiz-perfect">
+
+            <p class="quiz-result-label">
+                QUEST CLEAR
+            </p>
+
+            <p class="quiz-perfect-text">
+                よくぞここまで辿り着きました。<br>
+                あなたはSkaPunCeltに関する<br>
+                数々の難問を乗り越えました。<br>
+                <br>
+                その知識量……<br>
+                並の者ではありません。
+            </p>
+
+        </div>
+    `;
+
+}
 
 // 最初の問題を表示
 showQuestion();
