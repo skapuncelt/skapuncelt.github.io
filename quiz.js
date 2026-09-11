@@ -584,7 +584,6 @@ setTimeout(() => {
 
 // クイズ開始
 function startQuiz() {
-    document.getElementById("quiz-start").style.display = "none";
     quizElement.style.display = "block";
 
     showQuestion();
