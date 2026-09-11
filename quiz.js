@@ -506,17 +506,53 @@ setTimeout(() => {
 
                 setTimeout(() => {
 
-                    quizElement.innerHTML = `
-                        <div class="quiz-result quiz-perfect">
+    quizElement.innerHTML = `
+        <div class="quiz-result quiz-perfect">
 
-                            <p class="quiz-perfect-text">
-                                しんや「やっぱこれちゃう？」
-                            </p>
+            <p class="quiz-perfect-text">
+                しんや「やっぱこれちゃう？」
+            </p>
 
-                        </div>
-                    `;
+        </div>
+    `;
 
-                }, 1800);
+
+    // 協議終了
+    setTimeout(() => {
+
+        quizElement.innerHTML = `
+            <div class="quiz-result quiz-perfect">
+
+                <p class="quiz-perfect-text">
+                    協議終了。
+                </p>
+
+            </div>
+        `;
+
+
+        // 称号発表
+        setTimeout(() => {
+
+            quizElement.innerHTML = `
+                <div class="quiz-result quiz-perfect">
+
+                    <p class="quiz-perfect-text">
+                        称号：暇人<br>
+                        <br>
+                        おめでとうございます。<br>
+                        ※この称号があるからといって、<br>
+                        何かあるわけではないです。
+                    </p>
+
+                </div>
+            `;
+
+        }, 2000);
+
+    }, 2000);
+
+}, 1800);
 
             }, 1800);
 
