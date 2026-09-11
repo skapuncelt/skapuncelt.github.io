@@ -582,5 +582,10 @@ setTimeout(() => {
 }
 
 
-// 最初の問題を表示
-showQuestion();
+// クイズ開始
+function startQuiz() {
+    document.getElementById("quiz-start").style.display = "none";
+    quizElement.style.display = "block";
+
+    showQuestion();
+}
