@@ -431,3 +431,7 @@ function showPerfectResult() {
 
     }, 4000);
 }
+
+
+// 最初の問題を表示
+showQuestion();
