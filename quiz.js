@@ -1,4 +1,3 @@
-
 const quizQuestions = [
     {
         question: "SkaPunCeltの読み方は？",
@@ -397,6 +396,7 @@ function showResult() {
 // 10 / 10専用演出
 function showPerfectResult() {
 
+    // 第一段階
     quizElement.innerHTML = `
         <div class="quiz-result quiz-perfect">
 
@@ -416,62 +416,60 @@ function showPerfectResult() {
         </div>
     `;
 
-setTimeout(() => {
 
-    quizElement.innerHTML = `
-        <div class="quiz-result quiz-perfect">
-
-            <p class="quiz-perfect-text">
-                ……しかし。
-            </p>
-
-        </div>
-    `;
-
+    // 第二段階
     setTimeout(() => {
 
         quizElement.innerHTML = `
             <div class="quiz-result quiz-perfect">
 
                 <p class="quiz-perfect-text">
-                    ここまでSkaPunCeltのことを<br>
-                    知り尽くしている人物が<br>
-                    果たして普通の人間なのでしょうか。
-                </p>
-
-            </div>setTimeout(() => {
-
-    quizElement.innerHTML = `
-        <div class="quiz-result quiz-perfect">
-
-            <p class="quiz-perfect-text">
-                ここまでSkaPunCeltのことを<br>
-                知り尽くしている人物が<br>
-                果たして普通の人間なのでしょうか。
-            </p>
-
-        </div>
-    `;
-
-    setTimeout(() => {
-
-        quizElement.innerHTML = `
-            <div class="quiz-result quiz-perfect">
-
-                <p class="quiz-perfect-text">
-                    現在、メンバーで協議中です。
+                    ……しかし。
                 </p>
 
             </div>
         `;
 
-    }, 2500);
 
-}, 1500);
-        `
+        // 第三段階
+        setTimeout(() => {
 
-}, 2000);
+            quizElement.innerHTML = `
+                <div class="quiz-result quiz-perfect">
+
+                    <p class="quiz-perfect-text">
+                        ここまでSkaPunCeltのことを<br>
+                        知り尽くしている人物が<br>
+                        果たして普通の人間なのでしょうか。<br>
+                        <br>
+                        もっと特別な名前が<br>
+                        必要なのではないでしょうか。
+                    </p>
+
+                </div>
+            `;
+
+
+            // 第四段階
+            setTimeout(() => {
+
+                quizElement.innerHTML = `
+                    <div class="quiz-result quiz-perfect">
+
+                        <p class="quiz-perfect-text">
+                            現在、メンバーで協議中です。
+                        </p>
+
+                    </div>
+                `;
+
+            }, 2500);
+
+        }, 3500);
+
+    }, 2000);
 }
+
 
 // 最初の問題を表示
 showQuestion();
