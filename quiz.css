@@ -121,3 +121,20 @@
 .quiz-result p:last-child {
     line-height: 1.9;
 }
+
+
+
+
+
+/* 10 / 10 専用 */
+
+.quiz-perfect {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.quiz-perfect-text {
+    margin-top: 40px;
+    line-height: 2;
+    font-size: 1.05rem;
+}
