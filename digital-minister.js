@@ -557,7 +557,7 @@ const touchFirstLines = [
   "いや、ここデジタル大臣室やで？",
   "君、ここ見つけたん？",
   "……ここ、関係者以外入ったらあかんねんけど。",
-  "誰の許可取って入ってきたん？",
+  "……この部屋見つかると思ってなかったわ",
   "……ここまで来るとは思わんかった。",
   "ここ、普通の部屋ちゃうからな？",
   "……なんでそこまで探してんねん。"
@@ -577,7 +577,7 @@ const touchSecondLines = [
   "……ほんまに何も見てないよな？",
   "……開発資料、勝手に見てないよな？",
   "……社外秘だけは見てないよな？",
-  "……で、何も見てない。そういうことでええな？",
+  "……ふだんはもっときれいにしてるのに。",
   "……まさか秘密の資料とか見てないよな？"
 ];
 
@@ -598,9 +598,9 @@ function showTouchDialog() {
       : randomItem(touchFirstLines);
 
   const secondLine = randomItem(touchSecondLines);
-
-  touchLine1.textContent = firstLine;
-  touchLine2.textContent = secondLine;
+   
+touchLine1.textContent = `セーラ「${firstLine}」`;
+touchLine2.textContent = `セーラ「(${secondLine})」`;
 
   touchDialog.classList.remove("hidden");
 }
