@@ -1140,3 +1140,182 @@ body {
   }
 
 }
+
+
+
+/* =========================
+   DIARY SYSTEM
+========================= */
+
+.diary-content {
+  padding: 24px;
+}
+
+
+/* ヘッダー */
+
+.diary-header {
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #245b35;
+
+  margin-bottom: 18px;
+}
+
+
+.diary-system-label {
+  margin: 0 0 6px;
+
+  color: #477c55;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.diary-header h2 {
+  margin: 0;
+
+  color: #b4ffc3;
+
+  font-size: 22px;
+
+  letter-spacing: 2px;
+}
+
+
+.diary-subtitle {
+  margin: 7px 0 0;
+
+  color: #3f704b;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+/* 日誌一覧 */
+
+.diary-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* 1件 */
+
+.diary-entry {
+  display: grid;
+
+  grid-template-columns: 95px 1fr;
+
+  gap: 18px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px dashed #183d23;
+}
+
+
+.diary-date {
+  color: #55e979;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  padding-top: 3px;
+}
+
+
+.diary-entry-body h3 {
+  margin: 0 0 10px;
+
+  color: #a9ffb8;
+
+  font-size: 14px;
+
+  font-weight: normal;
+}
+
+
+.diary-entry-body p {
+  margin: 5px 0;
+
+  color: #7eae88;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+/* フッター */
+
+.diary-footer {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid #183d23;
+
+  color: #477c55;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+.diary-status {
+  color: #55e979;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .diary-content {
+    padding: 16px;
+  }
+
+
+  .diary-header h2 {
+    font-size: 18px;
+  }
+
+
+  .diary-entry {
+    grid-template-columns: 1fr;
+
+    gap: 6px;
+  }
+
+
+  .diary-date {
+    font-size: 10px;
+  }
+
+
+  .diary-entry-body h3 {
+    font-size: 13px;
+  }
+
+
+  .diary-entry-body p {
+    font-size: 11px;
+  }
+
+}
