@@ -228,46 +228,369 @@ body {
    デスクトップアイコン
 ========================= */
 
-.desktop-icon {
-  width: 110px;
+/* =========================
+   DIGITAL MINISTER DESKTOP
+========================= */
 
-  min-height: 100px;
+.desktop-screen {
+  min-height: 100vh;
 
-  margin: 0 25px 30px 0;
+  background:
+    radial-gradient(
+      circle at center,
+      #102018 0%,
+      #07100b 45%,
+      #030604 100%
+    );
 
-  padding: 8px;
+  color: #7dff9b;
 
-  display: inline-flex;
+  font-family:
+    "Courier New",
+    "Consolas",
+    monospace;
+}
+
+
+.desktop {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+.system-header {
+
+  height: 55px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 18px;
+
+  border: 1px solid #245b35;
+
+  background: rgba(0, 20, 10, 0.65);
+
+  box-shadow:
+    0 0 12px rgba(0, 255, 100, 0.08);
+
+  font-size: 12px;
+}
+
+
+.system-label {
+  color: #a4ffb7;
+
+  letter-spacing: 2px;
+}
+
+
+.system-version {
+  margin-left: 15px;
+
+  color: #477c55;
+}
+
+
+.system-status {
+  color: #55e979;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   ファイルエリア
+========================= */
+
+.file-area {
+
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(150px, 1fr));
+
+  align-content: start;
+
+  gap: 20px;
+
+  padding: 45px 20px;
+}
+
+
+/* =========================
+   ファイル
+========================= */
+
+.system-file {
+
+  min-height: 135px;
+
+  padding: 15px;
+
+  display: flex;
 
   flex-direction: column;
 
-  align-items: center;
+  justify-content: space-between;
 
-  justify-content: center;
+  text-align: left;
 
-  gap: 8px;
+  border: 1px solid #245b35;
 
-  border: none;
+  background:
+    rgba(0, 15, 7, 0.75);
 
-  background: transparent;
+  color: #7dff9b;
 
-  color: white;
+  font-family:
+    "Courier New",
+    monospace;
 
   cursor: pointer;
 
-  font-size: 13px;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
+
 }
 
 
-.desktop-icon:hover {
-  background: rgba(255,255,255,0.08);
+.system-file:hover {
+
+  background:
+    rgba(20, 70, 35, 0.45);
+
+  border-color: #66ff88;
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 100, 0.12);
+
 }
 
 
-.icon-image {
-  font-size: 40px;
+.system-file:active {
+
+  transform: translateY(1px);
+
 }
 
+
+/* =========================
+   ファイル内部
+========================= */
+
+.file-icon {
+
+  display: block;
+
+  color: #4bcf6a;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+}
+
+
+.file-name {
+
+  display: block;
+
+  margin-top: 15px;
+
+  color: #b4ffc3;
+
+  font-size: 16px;
+
+  font-weight: bold;
+}
+
+
+.file-type {
+
+  display: block;
+
+  margin-top: 8px;
+
+  color: #42774f;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   触るな.txt
+========================= */
+
+.warning-file {
+
+  border-color: #68452b;
+
+  color: #ffbd72;
+
+}
+
+
+.warning-file .file-icon {
+
+  color: #ff9e4a;
+
+}
+
+
+.warning-file .file-name {
+
+  color: #ffd0a0;
+
+}
+
+
+.warning-file .file-type {
+
+  color: #8d5d39;
+
+}
+
+
+.warning-file:hover {
+
+  border-color: #ff9e4a;
+
+  box-shadow:
+    0 0 15px rgba(255, 150, 60, 0.15);
+
+}
+
+
+/* =========================
+   フッター
+========================= */
+
+.system-footer {
+
+  min-height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 0 18px;
+
+  border: 1px solid #245b35;
+
+  background: rgba(0, 20, 10, 0.65);
+
+  color: #477c55;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+
+.system-footer span {
+
+  color: #7dff9b;
+
+}
+
+
+/* =========================
+   スマホ
+========================= */
+
+@media (max-width: 600px) {
+
+  .desktop {
+    padding: 10px;
+  }
+
+
+  .system-header {
+
+    height: auto;
+
+    min-height: 55px;
+
+    padding: 10px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+  }
+
+
+  .system-status {
+    font-size: 10px;
+  }
+
+
+  .file-area {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+
+    padding: 25px 5px;
+
+  }
+
+
+  .system-file {
+
+    min-height: 120px;
+
+    padding: 12px;
+
+  }
+
+
+  .file-name {
+    font-size: 13px;
+  }
+
+
+  .file-type {
+    font-size: 8px;
+  }
+
+
+  .system-footer {
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 8px;
+
+  }
+
+}
 
 /* =========================
    Windows風ウィンドウ
