@@ -514,3 +514,25 @@ if (ninjaNote) {
   });
 }
 
+
+const practiceNote = document.getElementById("practice-note");
+
+if (practiceNote) {
+  practiceNote.addEventListener("click", function() {
+    const front = this.querySelector(".note-front");
+    const back = this.querySelector(".note-back");
+
+    if (!front || !back) return;
+
+    if (back.classList.contains("hidden")) {
+      front.classList.add("hidden");
+      back.classList.remove("hidden");
+      this.classList.add("flipped");
+    } else {
+      back.classList.add("hidden");
+      front.classList.remove("hidden");
+      this.classList.remove("flipped");
+    }
+  });
+}
+
