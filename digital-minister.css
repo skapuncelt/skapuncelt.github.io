@@ -2102,3 +2102,93 @@ body {
   box-shadow: 4px 8px 14px rgba(0,0,0,0.35);
 }
 
+
+
+
+/* =========================================
+   触るな.txt
+========================================= */
+
+.touch-window-content {
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #07100b;
+}
+
+.touch-warning {
+  width: min(560px, 100%);
+  padding: 25px;
+}
+
+.touch-file-name {
+  margin-bottom: 28px;
+  color: #ffbd72;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.touch-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.touch-dialog.hidden {
+  display: none;
+}
+
+.touch-line {
+  color: #a4ffb7;
+  font-family: "Courier New", "Consolas", monospace;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.touch-line-2 {
+  color: #8cff9f;
+}
+
+.touch-exit-button {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 11px 18px;
+  border: 1px solid #3f9b56;
+  background: #0a1a0e;
+  color: #8cff9f;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.touch-exit-button:hover {
+  background: #14351d;
+  border-color: #66ff88;
+  color: #baffc6;
+}
+
+.touch-exit-button:active {
+  background: #1d4c29;
+}
+
+@media (max-width: 600px) {
+  .touch-window-content {
+    min-height: 300px;
+  }
+
+  .touch-warning {
+    padding: 20px;
+  }
+
+  .touch-line {
+    font-size: 12px;
+  }
+
+  .touch-exit-button {
+    width: 100%;
+    min-height: 44px;
+  }
+}
+
