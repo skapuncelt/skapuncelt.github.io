@@ -1965,10 +1965,13 @@ body {
 
 
 
+
 .note-run {
-  cursor: pointer;
-  border: none;
+  top: 430px;
+  left: 8%;
 }
+
+
 
 .note-run .note-front,
 .note-run .note-back {
