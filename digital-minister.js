@@ -139,10 +139,10 @@ passwordButton.addEventListener(
 ========================= */
 
 document
-  .querySelectorAll(".desktop-icon")
-  .forEach(icon => {
+  .querySelectorAll(".system-file")
+  .forEach(file => {
 
-    icon.addEventListener(
+    file.addEventListener(
       "click",
       function() {
 
@@ -160,7 +160,6 @@ document
     );
 
   });
-
 
 /* =========================
    ウィンドウを閉じる
