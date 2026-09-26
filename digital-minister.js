@@ -162,23 +162,129 @@ document
   });
 
 /* =========================
-   ウィンドウを閉じる
+   SYSTEM WINDOWS
 ========================= */
+
+let activeWindowZIndex = 20;
+
+
+/* ファイルをクリックしてウィンドウを開く */
+
+document
+  .querySelectorAll(".system-file")
+  .forEach(file => {
+
+    file.addEventListener("click", function() {
+
+      const windowId = this.dataset.window;
+      const targetWindow = document.getElementById(windowId);
+
+      if (!targetWindow) return;
+
+      targetWindow.classList.remove("hidden");
+
+      bringWindowToFront(targetWindow);
+    });
+
+  });
+
+
+/* ウィンドウを前面へ */
+
+function bringWindowToFront(targetWindow) {
+
+  activeWindowZIndex++;
+
+  targetWindow.style.zIndex = activeWindowZIndex;
+
+  document
+    .querySelectorAll(".desktop-window")
+    .forEach(window => {
+      window.classList.remove("active-window");
+    });
+
+  targetWindow.classList.add("active-window");
+}
+
+
+/* ウィンドウをクリックしたら前面へ */
+
+document
+  .querySelectorAll(".desktop-window")
+  .forEach(window => {
+
+    window.addEventListener("mousedown", function() {
+      bringWindowToFront(this);
+    });
+
+  });
+
+
+/* 最小化 */
+
+document
+  .querySelectorAll(".window-minimize")
+  .forEach(button => {
+
+    button.addEventListener("click", function(event) {
+
+      event.stopPropagation();
+
+      const window = this.closest(".desktop-window");
+
+      if (!window) return;
+
+      window.classList.toggle("minimized");
+
+    });
+
+  });
+
+
+/* 最大化 */
+
+document
+  .querySelectorAll(".window-maximize")
+  .forEach(button => {
+
+    button.addEventListener("click", function(event) {
+
+      event.stopPropagation();
+
+      const window = this.closest(".desktop-window");
+
+      if (!window) return;
+
+      window.classList.toggle("maximized");
+
+      window.classList.remove("minimized");
+
+      bringWindowToFront(window);
+
+    });
+
+  });
+
+
+/* 閉じる */
 
 document
   .querySelectorAll(".window-close")
   .forEach(button => {
 
-    button.addEventListener(
-      "click",
-      function() {
+    button.addEventListener("click", function(event) {
 
-        const window =
-          this.closest(".desktop-window");
+      event.stopPropagation();
 
-        window.classList.add("hidden");
+      const window = this.closest(".desktop-window");
 
-      }
-    );
+      if (!window) return;
+
+      window.classList.add("hidden");
+
+      window.classList.remove("minimized");
+      window.classList.remove("maximized");
+
+    });
 
   });
