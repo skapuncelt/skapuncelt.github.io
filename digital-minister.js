@@ -536,3 +536,135 @@ if (practiceNote) {
   });
 }
 
+
+
+/* =========================================
+   触るな.txt
+========================================= */
+
+const touchWindow = document.getElementById("touch-window");
+const touchDialog = document.getElementById("touch-dialog");
+const touchLine1 = document.getElementById("touch-line-1");
+const touchLine2 = document.getElementById("touch-line-2");
+const touchExitButton = document.getElementById("touch-exit-button");
+
+const touchFirstLines = [
+  "……なんでここにおるん？",
+  "ここ、関係者以外立ち入り禁止なんやけど。",
+  "……まさかここまで入ってくるとは思わんかったわ。",
+  "ここ、勝手に入ってきたらあかんで。",
+  "……いつの間に入ってきたん？",
+  "いや、ここデジタル大臣室やで？",
+  "君、ここ見つけたん？",
+  "……ここ、関係者以外入ったらあかんねんけど。",
+  "誰の許可取って入ってきたん？",
+  "……ここまで来るとは思わんかった。",
+  "ここ、普通の部屋ちゃうからな？",
+  "……なんでそこまで探してんねん。"
+];
+
+const touchSpecialLine =
+  "あれ、誰かいるん？ 邪魔すんなら帰って〜。……って、まじでなんでおるん。";
+
+const touchSecondLines = [
+  "……社外秘とか、見てないよな？",
+  "……開発資料とか、見てないよな？",
+  "……変なファイルとか開いてないよな？",
+  "……机の上とか、見てないよな？",
+  "社外秘の資料とか、見てないよな？",
+  "……見られたら困るもん、なかったよな？",
+  "……変な資料とか見てないやろな？",
+  "……ほんまに何も見てないよな？",
+  "……開発資料、勝手に見てないよな？",
+  "……社外秘だけは見てないよな？",
+  "……で、何も見てない。そういうことでええな？",
+  "……まさか秘密の資料とか見てないよな？"
+];
+
+function randomItem(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+function showTouchDialog() {
+  if (!touchWindow || !touchDialog) return;
+
+  /*
+   * 低確率で特殊な第一声。
+   * それ以外は通常の第一声。
+   */
+  const firstLine =
+    Math.random() < 0.08
+      ? touchSpecialLine
+      : randomItem(touchFirstLines);
+
+  const secondLine = randomItem(touchSecondLines);
+
+  touchLine1.textContent = firstLine;
+  touchLine2.textContent = secondLine;
+
+  touchDialog.classList.remove("hidden");
+}
+
+document.querySelectorAll(
+  '.system-file[data-window="touch-window"]'
+).forEach(file => {
+  file.addEventListener("click", function() {
+    showTouchDialog();
+  });
+});
+
+if (touchExitButton) {
+  touchExitButton.addEventListener("click", function() {
+
+    /*
+     * 触るな.txtを閉じる
+     */
+    if (touchWindow) {
+      touchWindow.classList.add("hidden");
+      touchWindow.classList.remove("minimized");
+      touchWindow.classList.remove("maximized");
+    }
+
+    /*
+     * デスクトップを終了
+     */
+    const desktopScreen = document.getElementById("desktop-screen");
+    const passwordScreen = document.getElementById("password-screen");
+
+    if (desktopScreen) {
+      desktopScreen.classList.add("hidden");
+    }
+
+    /*
+     * パスワード画面へ戻す
+     */
+    if (passwordScreen) {
+      passwordScreen.classList.remove("hidden");
+    }
+
+    /*
+     * 触るな.txtの内容もリセット
+     */
+    if (touchDialog) {
+      touchDialog.classList.add("hidden");
+    }
+
+    if (touchLine1) {
+      touchLine1.textContent = "";
+    }
+
+    if (touchLine2) {
+      touchLine2.textContent = "";
+    }
+
+    /*
+     * 開いていた他のウィンドウも閉じる
+     */
+    document.querySelectorAll(".desktop-window").forEach(window => {
+      window.classList.add("hidden");
+      window.classList.remove("minimized");
+      window.classList.remove("maximized");
+    });
+  });
+}
+
