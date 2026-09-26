@@ -1189,54 +1189,49 @@
              触るな.txt WINDOW
         ===================== -->
 
-        <div
-          id="touch-window"
-          class="desktop-window hidden"
-        >
 
-          <div class="window-titlebar">
+<!-- 触るな.txt -->
+<div id="touch-window" class="desktop-window hidden">
 
-            <span class="window-title">
-              触るな.txt
-            </span>
+  <div class="window-titlebar">
+    <div class="window-title">触るな.txt - DIGITAL MINISTER ROOM</div>
 
-            <div class="window-controls">
+    <div class="window-controls">
+      <button class="window-minimize">—</button>
+      <button class="window-maximize">□</button>
+      <button class="window-close">×</button>
+    </div>
+  </div>
 
-              <button
-                class="window-minimize"
-                aria-label="最小化"
-              >
-                —
-              </button>
+  <div class="window-content touch-window-content">
 
-              <button
-                class="window-maximize"
-                aria-label="最大化"
-              >
-                □
-              </button>
+    <div class="touch-warning">
+      <div class="touch-file-name">
+        触るな.txt
+      </div>
 
-              <button
-                class="window-close"
-                aria-label="閉じる"
-              >
-                ×
-              </button>
+      <div class="touch-dialog hidden" id="touch-dialog">
 
-            </div>
+        <div class="touch-line" id="touch-line-1"></div>
 
-          </div>
+        <div class="touch-line touch-line-2" id="touch-line-2"></div>
+
+        <button
+          type="button"
+          class="touch-exit-button"
+          id="touch-exit-button">
+          デジタル大臣室から出る
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 
-          <div class="window-content">
-
-            <p>
-              本当に触ったん？
-            </p>
-
-          </div>
-
-        </div>
 
 
       </div>
