@@ -915,3 +915,228 @@ body {
     max-height: calc(100vh - 64px);
   }
 }
+
+
+
+
+
+/* =========================
+   TO-DO SYSTEM
+========================= */
+
+.todo-content {
+  padding: 24px;
+}
+
+
+/* ヘッダー */
+
+.todo-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+
+.todo-system-label {
+  margin: 0 0 5px;
+
+  color: #477c55;
+
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+
+.todo-content h2 {
+  margin: 0;
+
+  color: #b4ffc3;
+
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+
+.todo-count {
+  padding: 6px 10px;
+
+  border: 1px solid #245b35;
+
+  color: #7dff9b;
+
+  font-size: 12px;
+
+  background: rgba(0, 20, 10, 0.6);
+}
+
+
+/* プログレスバー */
+
+.todo-progress {
+  width: 100%;
+  height: 5px;
+
+  margin-bottom: 22px;
+
+  background: #102418;
+
+  border: 1px solid #1b4026;
+
+  overflow: hidden;
+}
+
+
+.todo-progress-bar {
+  width: 0%;
+  height: 100%;
+
+  background: #55e979;
+
+  box-shadow: 0 0 8px rgba(85, 233, 121, 0.4);
+
+  transition: width 0.25s ease;
+}
+
+
+/* リスト */
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+/* タスク */
+
+.todo-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 11px 12px;
+
+  border: 1px solid #183d23;
+
+  background: rgba(0, 15, 7, 0.5);
+
+  color: #7dff9b;
+
+  font-family: "Courier New", "Consolas", monospace;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+
+
+.todo-item:hover {
+  background: rgba(20, 65, 32, 0.45);
+
+  border-color: #3f9b56;
+}
+
+
+.todo-item:active {
+  background: rgba(35, 90, 45, 0.5);
+}
+
+
+.todo-checkbox {
+  width: 35px;
+
+  flex-shrink: 0;
+
+  color: #55e979;
+
+  font-size: 13px;
+}
+
+
+.todo-text {
+  color: #9de9aa;
+
+  font-size: 12px;
+}
+
+
+/* 完了済み */
+
+.todo-item.completed {
+  border-color: #15351f;
+
+  background: rgba(0, 10, 5, 0.35);
+}
+
+
+.todo-item.completed .todo-text {
+  color: #477c55;
+
+  text-decoration: line-through;
+}
+
+
+/* 下部ステータス */
+
+.todo-footer {
+  display: flex;
+  gap: 8px;
+
+  margin-top: 22px;
+  padding-top: 12px;
+
+  border-top: 1px solid #183d23;
+
+  color: #477c55;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+.todo-status {
+  color: #55e979;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .todo-content {
+    padding: 16px;
+  }
+
+  .todo-content h2 {
+    font-size: 18px;
+  }
+
+  .todo-system-label {
+    font-size: 8px;
+  }
+
+  .todo-count {
+    font-size: 10px;
+  }
+
+  .todo-item {
+    padding: 12px 10px;
+  }
+
+  .todo-text {
+    font-size: 11px;
+  }
+
+}
