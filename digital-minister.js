@@ -467,3 +467,29 @@ photoViewer.addEventListener("click", function(event) {
     showingBack = false;
   }
 });
+
+
+
+
+
+const runNote = document.getElementById("run-note");
+
+if (runNote) {
+  runNote.addEventListener("click", function() {
+    const front = this.querySelector(".note-front");
+    const back = this.querySelector(".note-back");
+
+    const showingBack = !back.classList.contains("hidden");
+
+    if (showingBack) {
+      back.classList.add("hidden");
+      front.classList.remove("hidden");
+      this.classList.remove("flipped");
+    } else {
+      front.classList.add("hidden");
+      back.classList.remove("hidden");
+      this.classList.add("flipped");
+    }
+  });
+}
+
