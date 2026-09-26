@@ -1319,3 +1319,512 @@ body {
   }
 
 }
+
+
+```css
+/* =========================================
+   WALL / MEMORY BOARD
+========================================= */
+
+.wall-window-content {
+  padding: 0;
+  background: #17110d;
+}
+
+.wall-board-header {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border-bottom: 1px solid #3b2a1d;
+  background: #201710;
+  color: #80684f;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+
+/* -----------------------------------------
+   コルクボード本体
+----------------------------------------- */
+
+.corkboard {
+  position: relative;
+  width: 100%;
+  min-height: 1550px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,255,255,0.06), transparent 20%),
+    radial-gradient(circle at 80% 35%, rgba(0,0,0,0.08), transparent 25%),
+    radial-gradient(circle at 35% 75%, rgba(255,255,255,0.04), transparent 18%),
+    #8a5b38;
+
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.05) 0 1px, transparent 2px),
+    radial-gradient(circle at 70% 60%, rgba(0,0,0,0.07) 0 1px, transparent 2px),
+    linear-gradient(
+      105deg,
+      rgba(255,255,255,0.025),
+      rgba(0,0,0,0.035),
+      rgba(255,255,255,0.02)
+    );
+
+  box-shadow:
+    inset 0 0 35px rgba(0,0,0,0.25);
+}
+
+
+/* -----------------------------------------
+   メモ
+----------------------------------------- */
+
+.wall-note {
+  position: absolute;
+  width: 170px;
+  min-height: 105px;
+  padding: 18px 16px;
+
+  border: none;
+  border-radius: 1px;
+
+  color: #29251f;
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+
+  box-shadow:
+    2px 4px 7px rgba(0,0,0,0.25);
+
+  cursor: default;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.wall-note:hover {
+  transform: scale(1.025);
+  box-shadow:
+    3px 7px 12px rgba(0,0,0,0.3);
+}
+
+
+/* 色 */
+
+.note-yellow {
+  background: #f3dc69;
+}
+
+.note-pink {
+  background: #edaaa9;
+}
+
+.note-blue {
+  background: #a9d9e7;
+}
+
+.note-green {
+  background: #b8d99d;
+}
+
+.note-orange {
+  background: #f1b66c;
+}
+
+.note-white {
+  background: #eee9dc;
+}
+
+.note-purple {
+  background: #cbb7dc;
+}
+
+
+/* -----------------------------------------
+   付箋の配置
+----------------------------------------- */
+
+.note-1 {
+  top: 80px;
+  left: 8%;
+  transform: rotate(-3deg);
+}
+
+.note-2 {
+  top: 265px;
+  left: 39%;
+  transform: rotate(4deg);
+}
+
+.note-3 {
+  top: 440px;
+  left: 12%;
+  transform: rotate(-5deg);
+}
+
+.note-4 {
+  top: 620px;
+  left: 48%;
+  transform: rotate(2deg);
+}
+
+.note-5 {
+  top: 790px;
+  left: 18%;
+  transform: rotate(5deg);
+}
+
+.note-6 {
+  top: 950px;
+  left: 53%;
+  transform: rotate(-3deg);
+}
+
+.note-7 {
+  top: 1110px;
+  left: 10%;
+  transform: rotate(3deg);
+}
+
+.note-8 {
+  top: 1270px;
+  left: 45%;
+  transform: rotate(-4deg);
+}
+
+.note-9 {
+  top: 145px;
+  left: 65%;
+  transform: rotate(5deg);
+}
+
+.note-10 {
+  top: 520px;
+  left: 68%;
+  transform: rotate(-4deg);
+}
+
+.note-11 {
+  top: 735px;
+  left: 68%;
+  transform: rotate(3deg);
+}
+
+.note-12 {
+  top: 1020px;
+  left: 72%;
+  transform: rotate(-5deg);
+}
+
+
+/* -----------------------------------------
+   ライブ写真
+----------------------------------------- */
+
+.wall-photo {
+  position: absolute;
+  width: 205px;
+  padding: 10px 10px 30px;
+
+  background: #f2eee4;
+
+  box-shadow:
+    2px 5px 12px rgba(0,0,0,0.35);
+
+  color: #51483d;
+}
+
+.photo-placeholder {
+  height: 135px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #292929,
+      #666,
+      #222
+    );
+
+  color: #d9d9d9;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.photo-caption {
+  margin-top: 9px;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 11px;
+}
+
+
+/* 写真配置 */
+
+.photo-1 {
+  top: 55px;
+  left: 38%;
+  transform: rotate(-6deg);
+}
+
+.photo-2 {
+  top: 345px;
+  left: 65%;
+  transform: rotate(5deg);
+}
+
+.photo-3 {
+  top: 865px;
+  left: 38%;
+  transform: rotate(-3deg);
+}
+
+
+/* -----------------------------------------
+   普通の紙
+----------------------------------------- */
+
+.wall-paper {
+  position: absolute;
+  width: 210px;
+  min-height: 150px;
+  padding: 18px;
+
+  background: #eee8d7;
+
+  color: #40382e;
+
+  box-shadow:
+    2px 5px 10px rgba(0,0,0,0.25);
+
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.paper-title {
+  margin-bottom: 10px;
+
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #746655;
+}
+
+.paper-1 {
+  top: 220px;
+  left: 8%;
+  transform: rotate(6deg);
+}
+
+.paper-2 {
+  top: 1160px;
+  left: 65%;
+  transform: rotate(-6deg);
+}
+
+
+/* -----------------------------------------
+   下部の長期目標
+----------------------------------------- */
+
+.note-scroll {
+  width: 190px;
+  min-height: 115px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.note-ninja {
+  top: 1370px;
+  left: 13%;
+  transform: rotate(-4deg);
+  background: #e7d39b;
+}
+
+.note-practice {
+  top: 1385px;
+  left: 56%;
+  transform: rotate(4deg);
+  background: #f0df77;
+}
+
+
+/* -----------------------------------------
+   壁のフッター
+----------------------------------------- */
+
+.wall-window-footer {
+  display: flex;
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  border-top: 1px solid #3b2a1d;
+
+  background: #201710;
+
+  color: #80684f;
+
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.wall-status {
+  color: #b9a181;
+}
+
+
+/* -----------------------------------------
+   スクロールバー
+----------------------------------------- */
+
+.wall-window-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.wall-window-content::-webkit-scrollbar-track {
+  background: #120d09;
+}
+
+.wall-window-content::-webkit-scrollbar-thumb {
+  background: #5e412b;
+  border: 2px solid #120d09;
+}
+
+.wall-window-content::-webkit-scrollbar-thumb:hover {
+  background: #795538;
+}
+
+
+/* -----------------------------------------
+   スマホ
+----------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .wall-board-header {
+    padding: 0 12px;
+    font-size: 8px;
+  }
+
+  .corkboard {
+    min-height: 1850px;
+  }
+
+  .wall-note {
+    width: 145px;
+    min-height: 95px;
+    padding: 14px;
+
+    font-size: 11px;
+  }
+
+  .wall-photo {
+    width: 165px;
+    padding: 8px 8px 24px;
+  }
+
+  .photo-placeholder {
+    height: 110px;
+    font-size: 9px;
+  }
+
+  .wall-paper {
+    width: 165px;
+    min-height: 125px;
+    padding: 14px;
+    font-size: 10px;
+  }
+
+  .note-scroll {
+    width: 160px;
+    min-height: 105px;
+    font-size: 14px;
+  }
+
+  .note-1 {
+    top: 80px;
+    left: 5%;
+  }
+
+  .photo-1 {
+    top: 250px;
+    left: 42%;
+  }
+
+  .note-2 {
+    top: 430px;
+    left: 8%;
+  }
+
+  .photo-2 {
+    top: 600px;
+    left: 43%;
+  }
+
+  .note-3 {
+    top: 770px;
+    left: 7%;
+  }
+
+  .note-4 {
+    top: 920px;
+    left: 43%;
+  }
+
+  .note-5 {
+    top: 1080px;
+    left: 8%;
+  }
+
+  .photo-3 {
+    top: 1230px;
+    left: 43%;
+  }
+
+  .note-6 {
+    top: 1390px;
+    left: 7%;
+  }
+
+  .note-7 {
+    top: 1540px;
+    left: 43%;
+  }
+
+  .note-ninja {
+    top: 1680px;
+    left: 7%;
+  }
+
+  .note-practice {
+    top: 1710px;
+    left: 45%;
+  }
+
+  .paper-1,
+  .paper-2,
+  .note-8,
+  .note-9,
+  .note-10,
+  .note-11,
+  .note-12,
+  .note-bottom-1,
+  .note-bottom-2,
+  .note-bottom-3 {
+    transform: scale(0.9);
+  }
+}
+
+
