@@ -1321,7 +1321,7 @@ body {
 }
 
 
-```css
+
 /* =========================================
    WALL / MEMORY BOARD
 ========================================= */
@@ -1961,3 +1961,43 @@ body {
 .photo-flip:hover {
   background: #d3c3a5;
 }
+
+
+
+
+.note-run {
+  cursor: pointer;
+  border: none;
+}
+
+.note-run .note-front,
+.note-run .note-back {
+  display: block;
+  width: 100%;
+}
+
+.note-run .note-back {
+  min-height: 70px;
+}
+
+.note-run .note-back-title {
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #8a5b5b;
+}
+
+.note-run .note-back-text {
+  display: block;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.note-run.flipped {
+  background: #e8c7c7;
+  transform: rotate(-5deg) scale(1.02);
+}
+
