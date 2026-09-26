@@ -288,3 +288,96 @@ document
     });
 
   });
+
+/* =========================
+   TO-DO SYSTEM
+========================= */
+
+const todoItems = document.querySelectorAll(".todo-item");
+const todoCompleted = document.getElementById("todo-completed");
+const todoTotal = document.getElementById("todo-total");
+const todoProgressBar = document.getElementById("todo-progress-bar");
+const todoStatus = document.getElementById("todo-status");
+
+
+function updateTodoStatus() {
+
+  const total = todoItems.length;
+
+  const completed =
+    document.querySelectorAll(".todo-item.completed").length;
+
+  const percentage =
+    total === 0
+      ? 0
+      : Math.round((completed / total) * 100);
+
+
+  /* 件数 */
+
+  todoCompleted.textContent = completed;
+  todoTotal.textContent = total;
+
+
+  /* プログレスバー */
+
+  todoProgressBar.style.width =
+    percentage + "%";
+
+
+  /* ステータス */
+
+  if (percentage === 100) {
+
+    todoStatus.textContent =
+      "ALL TASKS COMPLETE";
+
+  } else if (percentage >= 70) {
+
+    todoStatus.textContent =
+      "ALMOST DONE";
+
+  } else {
+
+    todoStatus.textContent =
+      "WORK IN PROGRESS";
+
+  }
+
+}
+
+
+/* タスククリック */
+
+todoItems.forEach(item => {
+
+  item.addEventListener("click", function() {
+
+    this.classList.toggle("completed");
+
+
+    const checkbox =
+      this.querySelector(".todo-checkbox");
+
+
+    if (this.classList.contains("completed")) {
+
+      checkbox.textContent = "[✓]";
+
+    } else {
+
+      checkbox.textContent = "[ ]";
+
+    }
+
+
+    updateTodoStatus();
+
+  });
+
+});
+
+
+/* 初期状態 */
+
+updateTodoStatus();
