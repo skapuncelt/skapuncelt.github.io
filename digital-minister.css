@@ -2065,3 +2065,40 @@ body {
 
 
 
+
+#practice-note {
+  cursor: pointer;
+}
+
+#practice-note .note-front,
+#practice-note .note-back {
+  display: block;
+  width: 100%;
+}
+
+#practice-note .note-back {
+  min-height: 75px;
+}
+
+.practice-note-title {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #806f35;
+}
+
+.practice-note-text {
+  display: block;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#practice-note.flipped {
+  background: #e8d98d;
+  transform: rotate(-3deg) scale(1.03);
+  box-shadow: 4px 8px 14px rgba(0,0,0,0.35);
+}
+
