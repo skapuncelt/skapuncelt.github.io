@@ -105,174 +105,182 @@
          デスクトップ
     ===================== -->
 
-   <section
-  id="desktop-screen"
-  class="desktop-screen hidden"
->
+    <section
+      id="desktop-screen"
+      class="desktop-screen hidden"
+    >
 
-  <div class="desktop">
-
-    <!-- ヘッダー -->
-
-    <header class="system-header">
-
-      <div>
-        <span class="system-label">
-          DIGITAL MINISTER SYSTEM
-        </span>
-
-        <span class="system-version">
-          v1.0.0
-        </span>
-      </div>
-
-      <div class="system-status">
-        ● SYSTEM ONLINE
-      </div>
-
-    </header>
+      <div class="desktop">
 
 
-    <!-- デスクトップ本体 -->
+        <!-- ====================
+             ヘッダー
+        ===================== -->
 
-    <main class="file-area">
+        <header class="system-header">
 
+          <div>
 
-      <!-- TO-DO -->
+            <span class="system-label">
+              DIGITAL MINISTER SYSTEM
+            </span>
 
-      <button
-        class="system-file"
-        data-window="todo-window"
-      >
+            <span class="system-version">
+              v1.0.0
+            </span>
 
-        <span class="file-icon">
-          [FILE]
-        </span>
+          </div>
 
-        <span class="file-name">
-          TO-DO
-        </span>
+          <div class="system-status">
+            ● SYSTEM ONLINE
+          </div>
 
-        <span class="file-type">
-          TEXT / TASK
-        </span>
-
-      </button>
+        </header>
 
 
-      <!-- 大臣日誌 -->
+        <!-- ====================
+             デスクトップ本体
+        ===================== -->
 
-      <button
-        class="system-file"
-        data-window="diary-window"
-      >
-
-        <span class="file-icon">
-          [FILE]
-        </span>
-
-        <span class="file-name">
-          大臣日誌
-        </span>
-
-        <span class="file-type">
-          TEXT / LOG
-        </span>
-
-      </button>
+        <main class="file-area">
 
 
-      <!-- 壁 -->
+          <!-- TO-DO -->
 
-      <button
-        class="system-file"
-        data-window="wall-window"
-      >
+          <button
+            class="system-file"
+            data-window="todo-window"
+          >
 
-        <span class="file-icon">
-          [DATA]
-        </span>
+            <span class="file-icon">
+              [FILE]
+            </span>
 
-        <span class="file-name">
-          壁
-        </span>
+            <span class="file-name">
+              TO-DO
+            </span>
 
-        <span class="file-type">
-          VISUAL / DATA
-        </span>
+            <span class="file-type">
+              TEXT / TASK
+            </span>
 
-      </button>
-
-
-      <!-- 開発資料 -->
-
-      <button
-        class="system-file"
-        data-window="development-window"
-      >
-
-        <span class="file-icon">
-          [DIR]
-        </span>
-
-        <span class="file-name">
-          開発資料【マル秘】
-        </span>
-
-        <span class="file-type">
-          DIRECTORY
-        </span>
-
-      </button>
+          </button>
 
 
-      <!-- 触るな -->
+          <!-- 大臣日誌 -->
 
-      <button
-        class="system-file warning-file"
-        data-window="touch-window"
-      >
+          <button
+            class="system-file"
+            data-window="diary-window"
+          >
 
-        <span class="file-icon">
-          [TXT]
-        </span>
+            <span class="file-icon">
+              [FILE]
+            </span>
 
-        <span class="file-name">
-          触るな.txt
-        </span>
+            <span class="file-name">
+              大臣日誌
+            </span>
 
-        <span class="file-type">
-          WARNING
-        </span>
+            <span class="file-type">
+              TEXT / LOG
+            </span>
 
-      </button>
-
-    </main>
+          </button>
 
 
-    <!-- 下部ステータス -->
+          <!-- 壁 -->
 
-    <footer class="system-footer">
+          <button
+            class="system-file"
+            data-window="wall-window"
+          >
 
-      <div>
-        USER:
-        <span>DIGITAL_MINISTER</span>
-      </div>
+            <span class="file-icon">
+              [DATA]
+            </span>
 
-      <div>
-        ACCESS:
-        <span>GRANTED</span>
-      </div>
+            <span class="file-name">
+              壁
+            </span>
 
-      <div>
-        STATUS:
-        <span>AUTHENTICATED</span>
-      </div>
+            <span class="file-type">
+              VISUAL / DATA
+            </span>
 
-    </footer>
+          </button>
 
 
-    <!-- ウィンドウは今まで通りここ -->
+          <!-- 開発資料 -->
+
+          <button
+            class="system-file"
+            data-window="development-window"
+          >
+
+            <span class="file-icon">
+              [DIR]
+            </span>
+
+            <span class="file-name">
+              開発資料【マル秘】
+            </span>
+
+            <span class="file-type">
+              DIRECTORY
+            </span>
+
+          </button>
+
+
+          <!-- 触るな -->
+
+          <button
+            class="system-file warning-file"
+            data-window="touch-window"
+          >
+
+            <span class="file-icon">
+              [TXT]
+            </span>
+
+            <span class="file-name">
+              触るな.txt
+            </span>
+
+            <span class="file-type">
+              WARNING
+            </span>
+
+          </button>
+
+
+        </main>
+
+
+        <!-- ====================
+             下部ステータス
+        ===================== -->
+
+        <footer class="system-footer">
+
+          <div>
+            USER:
+            <span>DIGITAL_MINISTER</span>
+          </div>
+
+          <div>
+            ACCESS:
+            <span>GRANTED</span>
+          </div>
+
+          <div>
+            STATUS:
+            <span>AUTHENTICATED</span>
+          </div>
+
+        </footer>
+
 
         <!-- ====================
              TO-DO WINDOW
@@ -283,24 +291,54 @@
           class="desktop-window hidden"
         >
 
-          <div class="window-title">
+          <div class="window-titlebar">
 
-            <span>TO-DO</span>
+            <span class="window-title">
+              TO-DO
+            </span>
 
-            <button class="window-close">
-              ×
-            </button>
+            <div class="window-controls">
+
+              <button
+                class="window-minimize"
+                aria-label="最小化"
+              >
+                —
+              </button>
+
+              <button
+                class="window-maximize"
+                aria-label="最大化"
+              >
+                □
+              </button>
+
+              <button
+                class="window-close"
+                aria-label="閉じる"
+              >
+                ×
+              </button>
+
+            </div>
 
           </div>
 
+
           <div class="window-content">
 
-            <h2>TO-DO LIST</h2>
+            <h2>
+              TO-DO LIST
+            </h2>
 
             <p>☑ LIVEページ更新</p>
+
             <p>☑ X告知投稿</p>
+
             <p>☐ 新グッズページ作成</p>
+
             <p>☐ SPC診断を完成させる</p>
+
             <p>☐ ライブマップを作る</p>
 
           </div>
@@ -317,19 +355,45 @@
           class="desktop-window hidden"
         >
 
-          <div class="window-title">
+          <div class="window-titlebar">
 
-            <span>大臣日誌</span>
+            <span class="window-title">
+              大臣日誌
+            </span>
 
-            <button class="window-close">
-              ×
-            </button>
+            <div class="window-controls">
+
+              <button
+                class="window-minimize"
+                aria-label="最小化"
+              >
+                —
+              </button>
+
+              <button
+                class="window-maximize"
+                aria-label="最大化"
+              >
+                □
+              </button>
+
+              <button
+                class="window-close"
+                aria-label="閉じる"
+              >
+                ×
+              </button>
+
+            </div>
 
           </div>
 
+
           <div class="window-content">
 
-            <h2>大臣日誌</h2>
+            <h2>
+              大臣日誌
+            </h2>
 
             <p>
               今日はデジタル大臣室を作り始めた。
@@ -353,19 +417,45 @@
           class="desktop-window hidden"
         >
 
-          <div class="window-title">
+          <div class="window-titlebar">
 
-            <span>壁</span>
+            <span class="window-title">
+              壁
+            </span>
 
-            <button class="window-close">
-              ×
-            </button>
+            <div class="window-controls">
+
+              <button
+                class="window-minimize"
+                aria-label="最小化"
+              >
+                —
+              </button>
+
+              <button
+                class="window-maximize"
+                aria-label="最大化"
+              >
+                □
+              </button>
+
+              <button
+                class="window-close"
+                aria-label="閉じる"
+              >
+                ×
+              </button>
+
+            </div>
 
           </div>
 
+
           <div class="window-content">
 
-            <h2>壁</h2>
+            <h2>
+              壁
+            </h2>
 
             <p>
               ここに壁を作る。
@@ -385,15 +475,39 @@
           class="desktop-window hidden"
         >
 
-          <div class="window-title">
+          <div class="window-titlebar">
 
-            <span>開発資料【マル秘】</span>
+            <span class="window-title">
+              開発資料【マル秘】
+            </span>
 
-            <button class="window-close">
-              ×
-            </button>
+            <div class="window-controls">
+
+              <button
+                class="window-minimize"
+                aria-label="最小化"
+              >
+                —
+              </button>
+
+              <button
+                class="window-maximize"
+                aria-label="最大化"
+              >
+                □
+              </button>
+
+              <button
+                class="window-close"
+                aria-label="閉じる"
+              >
+                ×
+              </button>
+
+            </div>
 
           </div>
+
 
           <div class="window-content">
 
@@ -407,7 +521,7 @@
 
 
         <!-- ====================
-             触るな.txt
+             触るな.txt WINDOW
         ===================== -->
 
         <div
@@ -415,15 +529,39 @@
           class="desktop-window hidden"
         >
 
-          <div class="window-title">
+          <div class="window-titlebar">
 
-            <span>触るな.txt</span>
+            <span class="window-title">
+              触るな.txt
+            </span>
 
-            <button class="window-close">
-              ×
-            </button>
+            <div class="window-controls">
+
+              <button
+                class="window-minimize"
+                aria-label="最小化"
+              >
+                —
+              </button>
+
+              <button
+                class="window-maximize"
+                aria-label="最大化"
+              >
+                □
+              </button>
+
+              <button
+                class="window-close"
+                aria-label="閉じる"
+              >
+                ×
+              </button>
+
+            </div>
 
           </div>
+
 
           <div class="window-content">
 
@@ -434,6 +572,7 @@
           </div>
 
         </div>
+
 
       </div>
 
