@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Digital Minister Room | SkaPunCelt</title>
+
+  <link
+    rel="stylesheet"
+    href="digital-minister.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main id="digital-minister">
+
+    <!-- ====================
+         パスワード画面
+    ===================== -->
+
+    <section
+      id="password-screen"
+      class="screen password-screen"
+    >
+
+      <div class="password-box">
+
+        <p class="room-title">
+          DIGITAL MINISTER ROOM
+        </p>
+
+        <h1>
+          🔒 デジタル大臣室
+        </h1>
+
+        <p class="warning">
+          ※関係者以外立ち入り禁止
+        </p>
+
+        <p class="password-guide">
+          パスワードを入力してください
+        </p>
+
+        <div class="password-input-area">
+
+          <input
+            id="password-input"
+            type="password"
+            autocomplete="off"
+          >
+
+          <button id="password-button">
+            ENTER
+          </button>
+
+        </div>
+
+        <p
+          id="password-error"
+          class="password-error"
+        ></p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================
+         認証演出
+    ===================== -->
+
+    <section
+      id="loading-screen"
+      class="screen loading-screen hidden"
+    >
+
+      <div id="loading-text">
+
+        <p>&gt; ACCESS GRANTED</p>
+
+        <p>&gt; WELCOME, DIGITAL MINISTER.</p>
+
+        <p>&gt; INITIALIZING DIGITAL MINISTER ROOM...</p>
+
+        <p id="loading-bar">
+          ████████████████████ 0%
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================
+         デスクトップ
+    ===================== -->
+
+    <section
+      id="desktop-screen"
+      class="desktop-screen hidden"
+    >
+
+      <div class="desktop">
+
+        <!-- TO-DO -->
+
+        <button
+          class="desktop-icon"
+          data-window="todo-window"
+        >
+
+          <span class="icon-image">
+            📋
+          </span>
+
+          <span>
+            TO-DO
+          </span>
+
+        </button>
+
+
+        <!-- 大臣日誌 -->
+
+        <button
+          class="desktop-icon"
+          data-window="diary-window"
+        >
+
+          <span class="icon-image">
+            📓
+          </span>
+
+          <span>
+            大臣日誌
+          </span>
+
+        </button>
+
+
+        <!-- 壁 -->
+
+        <button
+          class="desktop-icon"
+          data-window="wall-window"
+        >
+
+          <span class="icon-image">
+            🧱
+          </span>
+
+          <span>
+            壁
+          </span>
+
+        </button>
+
+
+        <!-- 開発資料 -->
+
+        <button
+          class="desktop-icon"
+          data-window="development-window"
+        >
+
+          <span class="icon-image">
+            📁
+          </span>
+
+          <span>
+            開発資料【マル秘】
+          </span>
+
+        </button>
+
+
+        <!-- 触るな.txt -->
+
+        <button
+          class="desktop-icon"
+          data-window="touch-window"
+        >
+
+          <span class="icon-image">
+            📄
+          </span>
+
+          <span>
+            触るな.txt
+          </span>
+
+        </button>
+
+
+        <!-- ====================
+             TO-DO WINDOW
+        ===================== -->
+
+        <div
+          id="todo-window"
+          class="desktop-window hidden"
+        >
+
+          <div class="window-title">
+
+            <span>TO-DO</span>
+
+            <button class="window-close">
+              ×
+            </button>
+
+          </div>
+
+          <div class="window-content">
+
+            <h2>TO-DO LIST</h2>
+
+            <p>☑ LIVEページ更新</p>
+            <p>☑ X告知投稿</p>
+            <p>☐ 新グッズページ作成</p>
+            <p>☐ SPC診断を完成させる</p>
+            <p>☐ ライブマップを作る</p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ====================
+             大臣日誌 WINDOW
+        ===================== -->
+
+        <div
+          id="diary-window"
+          class="desktop-window hidden"
+        >
+
+          <div class="window-title">
+
+            <span>大臣日誌</span>
+
+            <button class="window-close">
+              ×
+            </button>
+
+          </div>
+
+          <div class="window-content">
+
+            <h2>大臣日誌</h2>
+
+            <p>
+              今日はデジタル大臣室を作り始めた。
+            </p>
+
+            <p>
+              ……そもそも何の部屋なんだろう。
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ====================
+             壁 WINDOW
+        ===================== -->
+
+        <div
+          id="wall-window"
+          class="desktop-window hidden"
+        >
+
+          <div class="window-title">
+
+            <span>壁</span>
+
+            <button class="window-close">
+              ×
+            </button>
+
+          </div>
+
+          <div class="window-content">
+
+            <h2>壁</h2>
+
+            <p>
+              ここに壁を作る。
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ====================
+             開発資料 WINDOW
+        ===================== -->
+
+        <div
+          id="development-window"
+          class="desktop-window hidden"
+        >
+
+          <div class="window-title">
+
+            <span>開発資料【マル秘】</span>
+
+            <button class="window-close">
+              ×
+            </button>
+
+          </div>
+
+          <div class="window-content">
+
+            <p>
+              開発資料は現在準備中。
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ====================
+             触るな.txt
+        ===================== -->
+
+        <div
+          id="touch-window"
+          class="desktop-window hidden"
+        >
+
+          <div class="window-title">
+
+            <span>触るな.txt</span>
+
+            <button class="window-close">
+              ×
+            </button>
+
+          </div>
+
+          <div class="window-content">
+
+            <p>
+              本当に触ったん？
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="digital-minister.js"></script>
+
+</body>
+
+</html>
