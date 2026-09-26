@@ -1568,16 +1568,11 @@ body {
   font-size: 11px;
   color: #51483d;
 }
+
 .photo-fukui-1 {
   top: 60px;
   left: 38%;
   transform: rotate(-5deg);
-}
-
-.photo-fukui-2 {
-  top: 320px;
-  left: 65%;
-  transform: rotate(4deg);
 }
 
 .photo-fukui-3 {
@@ -1586,22 +1581,10 @@ body {
   transform: rotate(-4deg);
 }
 
-.photo-fukui-4 {
-  top: 730px;
-  left: 43%;
-  transform: rotate(6deg);
-}
-
 .photo-suito-1 {
   top: 900px;
   left: 67%;
   transform: rotate(-5deg);
-}
-
-.photo-suito-2 {
-  top: 1070px;
-  left: 12%;
-  transform: rotate(3deg);
 }
 
 .photo-minami-1 {
@@ -1610,23 +1593,12 @@ body {
   transform: rotate(-4deg);
 }
 
-.photo-minami-2 {
-  top: 1390px;
-  left: 70%;
-  transform: rotate(5deg);
-}
-
 .photo-kingsx-1 {
   top: 1550px;
   left: 10%;
   transform: rotate(-6deg);
 }
 
-.photo-kingsx-2 {
-  top: 1700px;
-  left: 45%;
-  transform: rotate(4deg);
-}
 
 
 
