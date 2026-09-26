@@ -1460,7 +1460,7 @@ body {
 }
 
 .note-3 {
-  top: 440px;
+  top: 430px;
   left: 12%;
   transform: rotate(-5deg);
 }
@@ -1966,10 +1966,22 @@ body {
 
 
 
+
 .note-run {
-  top: 430px;
-  left: 8%;
+  top: 220px;
+  left: 39%;
+  cursor: pointer;
+  border: none;
+  z-index: 3;
 }
+
+.note-3 {
+  top: 430px;
+  left: 12%;
+  z-index: 2;
+}
+
+
 
 
 
