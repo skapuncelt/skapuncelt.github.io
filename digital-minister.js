@@ -381,3 +381,89 @@ todoItems.forEach(item => {
 /* 初期状態 */
 
 updateTodoStatus();
+
+
+
+
+const wallPhotos = document.querySelectorAll(".wall-photo");
+const photoViewer = document.getElementById("photo-viewer");
+const photoViewerImage = document.getElementById("photo-viewer-image");
+const photoViewerEvent = document.getElementById("photo-viewer-event");
+const photoViewerCaption = document.getElementById("photo-viewer-caption");
+const photoFlip = document.getElementById("photo-flip");
+const photoViewerClose = document.getElementById("photo-viewer-close");
+
+let currentPhoto = null;
+let showingBack = false;
+
+wallPhotos.forEach(photo => {
+  photo.addEventListener("click", function(event) {
+    event.stopPropagation();
+
+    currentPhoto = this;
+    showingBack = false;
+
+    openPhotoViewer();
+  });
+});
+
+
+function openPhotoViewer() {
+  if (!currentPhoto) return;
+
+  photoViewerImage.src = currentPhoto.dataset.front;
+  photoViewerImage.alt = currentPhoto.dataset.title;
+
+  photoViewerEvent.textContent =
+    currentPhoto.dataset.title;
+
+  photoViewerCaption.textContent =
+    "SkaPunCelt / LIVE";
+
+  photoFlip.textContent =
+    "裏面を見る";
+
+  photoViewer.classList.remove("hidden");
+}
+
+
+photoFlip.addEventListener("click", function() {
+  if (!currentPhoto) return;
+
+  showingBack = !showingBack;
+
+  if (showingBack) {
+
+    photoViewerImage.src =
+      currentPhoto.dataset.back;
+
+    photoFlip.textContent =
+      "表面を見る";
+
+  } else {
+
+    photoViewerImage.src =
+      currentPhoto.dataset.front;
+
+    photoFlip.textContent =
+      "裏面を見る";
+  }
+});
+
+
+photoViewerClose.addEventListener("click", function() {
+  photoViewer.classList.add("hidden");
+
+  currentPhoto = null;
+  showingBack = false;
+});
+
+
+photoViewer.addEventListener("click", function(event) {
+  if (event.target === photoViewer) {
+    photoViewer.classList.add("hidden");
+
+    currentPhoto = null;
+    showingBack = false;
+  }
+});
