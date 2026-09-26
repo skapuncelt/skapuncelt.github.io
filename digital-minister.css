@@ -2016,3 +2016,50 @@ body {
   transform: rotate(-5deg) scale(1.02);
 }
 
+
+
+
+.note-ninja {
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.note-ninja .note-front,
+.note-ninja .note-back {
+  display: block;
+  width: 100%;
+}
+
+.note-ninja .note-back {
+  min-height: 125px;
+}
+
+.ninja-goal-title {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #756347;
+}
+
+.ninja-goal {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.goal-label {
+  font-weight: bold;
+}
+
+.note-ninja.flipped {
+  background: #d8c18d;
+  transform: rotate(-4deg) scale(1.03);
+  box-shadow: 4px 8px 14px rgba(0,0,0,0.35);
+}
+
