@@ -1535,55 +1535,99 @@ body {
     2px 5px 12px rgba(0,0,0,0.35);
 
   color: #51483d;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.photo-placeholder {
+.wall-photo:hover {
+  box-shadow:
+    4px 8px 15px rgba(0,0,0,0.4);
+  z-index: 5;
+}
+
+.wall-photo img {
+  display: block;
+  width: 100%;
   height: 135px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background:
-    linear-gradient(
-      135deg,
-      #292929,
-      #666,
-      #222
-    );
-
-  color: #d9d9d9;
-  font-family: "Courier New", monospace;
-  font-size: 11px;
-  letter-spacing: 2px;
+  object-fit: cover;
 }
 
 .photo-caption {
   margin-top: 9px;
-  font-family: "Comic Sans MS", cursive;
+
+  font-family:
+    "Comic Sans MS",
+    "Segoe Print",
+    cursive;
+
   font-size: 11px;
+  color: #51483d;
 }
-
-
-/* 写真配置 */
-
-.photo-1 {
-  top: 55px;
+.photo-fukui-1 {
+  top: 60px;
   left: 38%;
-  transform: rotate(-6deg);
+  transform: rotate(-5deg);
 }
 
-.photo-2 {
-  top: 345px;
+.photo-fukui-2 {
+  top: 320px;
   left: 65%;
+  transform: rotate(4deg);
+}
+
+.photo-fukui-3 {
+  top: 520px;
+  left: 8%;
+  transform: rotate(-4deg);
+}
+
+.photo-fukui-4 {
+  top: 730px;
+  left: 43%;
+  transform: rotate(6deg);
+}
+
+.photo-suito-1 {
+  top: 900px;
+  left: 67%;
+  transform: rotate(-5deg);
+}
+
+.photo-suito-2 {
+  top: 1070px;
+  left: 12%;
+  transform: rotate(3deg);
+}
+
+.photo-minami-1 {
+  top: 1230px;
+  left: 43%;
+  transform: rotate(-4deg);
+}
+
+.photo-minami-2 {
+  top: 1390px;
+  left: 70%;
   transform: rotate(5deg);
 }
 
-.photo-3 {
-  top: 865px;
-  left: 38%;
-  transform: rotate(-3deg);
+.photo-kingsx-1 {
+  top: 1550px;
+  left: 10%;
+  transform: rotate(-6deg);
 }
+
+.photo-kingsx-2 {
+  top: 1700px;
+  left: 45%;
+  transform: rotate(4deg);
+}
+
 
 
 /* -----------------------------------------
@@ -1718,9 +1762,9 @@ body {
     font-size: 8px;
   }
 
-  .corkboard {
-    min-height: 1850px;
-  }
+.corkboard {
+  min-height: 1900px;
+}
 
   .wall-note {
     width: 145px;
@@ -1828,3 +1872,120 @@ body {
 }
 
 
+.photo-viewer {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0,0,0,0.82);
+
+  z-index: 100;
+}
+
+.photo-viewer.hidden {
+  display: none;
+}
+
+.photo-viewer-inner {
+  position: relative;
+
+  width: min(600px, 90%);
+
+  padding: 18px;
+
+  background: #eee8d7;
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,0.6);
+
+  color: #302920;
+}
+
+.photo-viewer-inner img {
+  display: block;
+
+  width: 100%;
+  max-height: 65vh;
+
+  object-fit: contain;
+
+  background: #111;
+}
+
+.photo-viewer-event {
+  margin-bottom: 10px;
+
+  color: #705c49;
+
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.photo-viewer-caption {
+  margin-top: 10px;
+
+  color: #51483d;
+
+  font-family:
+    "Comic Sans MS",
+    "Segoe Print",
+    cursive;
+
+  font-size: 13px;
+}
+
+.photo-viewer-close {
+  position: absolute;
+
+  top: 5px;
+  right: 7px;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #55483d;
+
+  font-family: "Courier New", monospace;
+  font-size: 24px;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.photo-viewer-close:hover {
+  color: #b23b2d;
+}
+
+.photo-flip {
+  display: block;
+
+  margin: 16px auto 2px;
+
+  padding: 9px 18px;
+
+  border: 1px solid #80684f;
+
+  background: #e1d5bc;
+
+  color: #493c30;
+
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.photo-flip:hover {
+  background: #d3c3a5;
+}
