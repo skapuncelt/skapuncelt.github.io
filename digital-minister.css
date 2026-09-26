@@ -724,3 +724,194 @@ body {
   }
 
 }
+
+
+
+/* =========================
+   SYSTEM WINDOWS
+========================= */
+
+.desktop-window {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(720px, calc(100vw - 60px));
+  max-height: calc(100vh - 180px);
+
+  border: 1px solid #3f9b56;
+  background: #061009;
+  color: #8cff9f;
+
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 100, 0.05),
+    0 10px 40px rgba(0, 0, 0, 0.65);
+
+  font-family: "Courier New", "Consolas", monospace;
+
+  z-index: 10;
+
+  overflow: hidden;
+}
+
+
+/* タイトルバー */
+
+.window-titlebar {
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 15px;
+
+  border-bottom: 1px solid #245b35;
+
+  background: #0a1a0e;
+
+  user-select: none;
+}
+
+
+.window-title {
+  color: #a9ffb8;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ボタン */
+
+.window-controls {
+  display: flex;
+  height: 100%;
+}
+
+
+.window-controls button {
+  width: 42px;
+  height: 100%;
+
+  border: 0;
+  border-left: 1px solid #245b35;
+
+  background: transparent;
+
+  color: #75d889;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+.window-controls button:hover {
+  background: #14351d;
+  color: #baffc6;
+}
+
+
+.window-controls button:active {
+  background: #1d4c29;
+}
+
+
+/* 閉じるボタンだけ少し警告色 */
+
+.window-close:hover {
+  background: #422018 !important;
+  color: #ff9b7a !important;
+}
+
+
+/* 中身 */
+
+.window-content {
+  max-height: calc(100vh - 222px);
+
+  padding: 24px;
+
+  overflow-y: auto;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* 最小化 */
+
+.desktop-window.minimized {
+  height: 42px;
+  max-height: 42px;
+}
+
+
+.desktop-window.minimized .window-content {
+  display: none;
+}
+
+
+/* 最大化 */
+
+.desktop-window.maximized {
+  top: 20px;
+  left: 20px;
+
+  width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+
+  transform: none;
+}
+
+
+.desktop-window.maximized .window-content {
+  max-height: calc(100vh - 82px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .desktop-window {
+    top: 80px;
+    width: calc(100vw - 24px);
+    max-height: calc(100vh - 110px);
+  }
+
+  .window-titlebar {
+    height: 44px;
+  }
+
+  .window-controls button {
+    width: 44px;
+  }
+
+  .window-content {
+    max-height: calc(100vh - 154px);
+    padding: 18px;
+    font-size: 12px;
+  }
+
+  .desktop-window.maximized {
+    top: 10px;
+    left: 10px;
+
+    width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+  }
+
+  .desktop-window.maximized .window-content {
+    max-height: calc(100vh - 64px);
+  }
+}
