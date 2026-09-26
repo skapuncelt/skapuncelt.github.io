@@ -193,7 +193,7 @@
 
           <button
             class="system-file"
-            data-window="wall-window"
+            data-window="wall-board-window"
           >
 
             <span class="file-icon">
@@ -795,62 +795,157 @@
 </div>
 
 
-        <!-- ====================
-             壁 WINDOW
-        ===================== -->
 
-        <div
-          id="wall-window"
-          class="desktop-window hidden"
-        >
+<!-- 壁ウィンドウ -->
+<div id="wall-board-window" class="desktop-window hidden">
+  <div class="window-titlebar">
+    <div class="window-title">壁 - DIGITAL MINISTER ROOM</div>
 
-          <div class="window-titlebar">
+    <div class="window-controls">
+      <button class="window-minimize">—</button>
+      <button class="window-maximize">□</button>
+      <button class="window-close">×</button>
+    </div>
+  </div>
 
-            <span class="window-title">
-              壁
-            </span>
+  <div class="window-content wall-window-content">
 
-            <div class="window-controls">
+    <div class="wall-board-header">
+      <span>SPC WALL / INTERNAL MEMORY BOARD</span>
+      <span>NO. 001</span>
+    </div>
 
-              <button
-                class="window-minimize"
-                aria-label="最小化"
-              >
-                —
-              </button>
+    <div class="corkboard">
 
-              <button
-                class="window-maximize"
-                aria-label="最大化"
-              >
-                □
-              </button>
-
-              <button
-                class="window-close"
-                aria-label="閉じる"
-              >
-                ×
-              </button>
-
-            </div>
-
-          </div>
-
-
-          <div class="window-content">
-
-            <h2>
-              壁
-            </h2>
-
-            <p>
-              ここに壁を作る。
-            </p>
-
-          </div>
-
+      <!-- ライブ写真 -->
+      <div class="wall-photo photo-1">
+        <div class="photo-placeholder">
+          LIVE PHOTO
         </div>
+        <div class="photo-caption">
+          SkaPunCelt / LIVE
+        </div>
+      </div>
+
+      <div class="wall-photo photo-2">
+        <div class="photo-placeholder">
+          LIVE PHOTO
+        </div>
+        <div class="photo-caption">
+          SkaPunCelt / LIVE
+        </div>
+      </div>
+
+      <div class="wall-photo photo-3">
+        <div class="photo-placeholder">
+          LIVE PHOTO
+        </div>
+        <div class="photo-caption">
+          SkaPunCelt / LIVE
+        </div>
+      </div>
+
+
+      <!-- 付箋 -->
+      <button class="wall-note note-yellow note-1">
+        絶対毎日ドラムの練習をする！
+      </button>
+
+      <button class="wall-note note-pink note-2">
+        ライブで走らない！
+      </button>
+
+      <div class="wall-note note-blue note-3">
+        寝る時間を減らしたい。
+      </div>
+
+      <div class="wall-note note-green note-4">
+        ライブに来てほしい
+      </div>
+
+      <div class="wall-note note-orange note-5">
+        部屋を片付ける
+      </div>
+
+      <div class="wall-note note-white note-6">
+        金曜・日曜・火曜に<br>
+        スタジオの予約確認。
+      </div>
+
+      <div class="wall-note note-purple note-7">
+        動画の編集忘れない。
+      </div>
+
+      <div class="wall-note note-yellow note-8">
+        ライブ後パンダさんの回収忘れない
+      </div>
+
+      <button class="wall-note note-blue note-9">
+        Lifeline 3回
+      </button>
+
+      <div class="wall-note note-pink note-10">
+        Skadan!最後走る癖<br>
+        なおしたい……。
+      </div>
+
+      <div class="wall-note note-white note-11">
+        無意識怖い。
+      </div>
+
+      <div class="wall-note note-orange note-12">
+        元素検定1級受かりたい。
+      </div>
+
+
+      <!-- 普通の紙 -->
+      <div class="wall-paper paper-1">
+        <div class="paper-title">LIVE MEMO</div>
+        <p>次のライブも忘れず確認。</p>
+        <p>セットリスト更新。</p>
+      </div>
+
+      <div class="wall-paper paper-2">
+        <div class="paper-title">TODO</div>
+        <p>動画編集</p>
+        <p>REC準備</p>
+        <p>ホームページ更新</p>
+      </div>
+
+
+      <!-- 下の方にある長期目標 -->
+      <button class="wall-note note-scroll note-ninja">
+        忍者になりたい
+      </button>
+
+      <button class="wall-note note-scroll note-practice">
+        絶対毎日ドラムの練習をする！
+      </button>
+
+
+      <!-- ただの謎メモ -->
+      <div class="wall-note note-green note-bottom-1">
+        これ何のメモ？
+      </div>
+
+      <div class="wall-note note-yellow note-bottom-2">
+        あとで考える
+      </div>
+
+      <div class="wall-note note-pink note-bottom-3">
+        忘れない。
+      </div>
+
+    </div>
+
+    <div class="wall-window-footer">
+      <span>WALL STATUS:</span>
+      <span class="wall-status">MEMORY RECORDED</span>
+    </div>
+
+  </div>
+</div>
+
 
 
         <!-- ====================
