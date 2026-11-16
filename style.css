@@ -2496,3 +2496,56 @@ transform: scale(0.94);
         font-size: 1.2rem;
     }
 }
+
+
+
+/* =========================
+   SPECIAL EVENT
+========================== */
+
+#special-event {
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto 65px;
+    padding: 30px 20px;
+}
+
+#special-event h2 {
+    margin-bottom: 25px;
+}
+
+.special-event-flyer-link {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.special-event-flyer {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.special-event-info {
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+.special-event-date {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.special-event-info .detail-button {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    #special-event {
+        margin: 35px auto 45px;
+        padding: 20px 15px;
+    }
+}
